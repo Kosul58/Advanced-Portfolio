@@ -1,0 +1,133 @@
+.about {
+  width: 100%;
+  height: 100vh;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.about h2,
+.experiences h2 {
+  margin-top: 7rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.about h1,
+.experiences h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin-top: -1rem;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.aboutx {
+  width: 85%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1000px) {
+  .aboutx {
+    flex-direction: column;
+  }
+  .aboutinfox {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .experience {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .experience,
+  .education {
+    width: 450px !important;
+    height: 400px !important;
+  }
+
+  .aboutinfox2 {
+    margin-top: 20px !important;
+    width: fit-content !important;
+    font-size: 20px !important;
+  }
+}
+
+.aboutimg2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
+  box-shadow: rgba(42, 25, 25, 0.2) 0px 0px 8px;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.aboutinfo {
+  margin-top: -2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutinfox {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.aboutinfox div {
+  width: 42%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.aboutinfox2 {
+  margin-top: -2rem;
+  width: 90%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.experience h3,
+.education h3 {
+  margin-top: -1.5rem;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+.experience h2,
+.education h2 {
+  font-size: larger;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.experience p,
+.education p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-top: -2rem;
+  text-align: center;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
