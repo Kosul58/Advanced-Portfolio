@@ -23,6 +23,7 @@
     margin-left: -10rem;
   }
 }
+<<<<<<< HEAD
 
 .animate-pop-in {
   animation: pop-in 2s ease-out forwards;
@@ -60,6 +61,8 @@
     transform: translateX(0);
   }
 }
+=======
+>>>>>>> 48c1d570945ee37cb5448134f2e8df252992b684
 .selfimg {
   width: 400px;
   height: 400px;
@@ -71,9 +74,15 @@
   /* border: 2px solid rgb(0, 0, 0); */
 }
 .selfimg2 {
+<<<<<<< HEAD
   width: 400px;
   height: 400px;
   border-radius: 50px;
+=======
+  width: 300px;
+  height: 300px;
+  border-radius: 50% 50% 50% 50%;
+>>>>>>> 48c1d570945ee37cb5448134f2e8df252992b684
   display: flex;
   align-items: center;
   justify-content: center;

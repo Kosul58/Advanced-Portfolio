@@ -17,6 +17,7 @@ function Home({ scrollToAbout }) {
       <div className="home">
         <div className="landingpage">
           <div className="selfimg">
+<<<<<<< HEAD
             <img
               src={kosul20}
               alt="Kosul Gurung"
@@ -27,6 +28,14 @@ function Home({ scrollToAbout }) {
             <h1 className="animate-pop-in">Hello, I'm</h1>
             <h1 className="animate-pop-in">Kosul Gurung</h1>
             <h1 className="animate-pop-in">Full Stack Developer</h1>
+=======
+            <img src={kosul20} alt="Kosul Gurung" className="selfimg2"></img>
+          </div>
+          <div className="selfinfo">
+            <h1>Hello, I'm</h1>
+            <h1>Kosul Gurung</h1>
+            <h1>Full Stack Developer</h1>
+>>>>>>> 48c1d570945ee37cb5448134f2e8df252992b684
             <div>
               <button className="button1" onClick={downloadFile}>
                 Download CV
