@@ -11,20 +11,12 @@ const About = () => {
       <h2>Get to know more</h2>
       <h1>About Me</h1>
       <div className="aboutx">
-<<<<<<< HEAD
         <div className="aboutimg block">
-=======
-        <div className="aboutimg">
->>>>>>> 48c1d570945ee37cb5448134f2e8df252992b684
           <img src={kosul22} alt="Kosul Gurung" className="aboutimg2"></img>
         </div>
         <div className="aboutinfo">
           <div className="aboutinfox">
-<<<<<<< HEAD
             <div className="experience block2">
-=======
-            <div className="experience">
->>>>>>> 48c1d570945ee37cb5448134f2e8df252992b684
               <h4>
                 <PiMedalDuotone size={30} />
               </h4>
@@ -33,11 +25,7 @@ const About = () => {
                 2+ Years <br></br>Full Stack Developer
               </p>
             </div>
-<<<<<<< HEAD
             <div className="education block2">
-=======
-            <div className="education">
->>>>>>> 48c1d570945ee37cb5448134f2e8df252992b684
               <h4>
                 <PiStudentFill size={30} />
               </h4>

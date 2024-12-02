@@ -9,13 +9,8 @@ function Projects() {
     <div className="projects">
       <h2>Explore My Recent</h2>
       <h1>Projects</h1>
-<<<<<<< HEAD
       <div className="projectsx ">
         <div className="project1 blockl">
-=======
-      <div className="projectsx">
-        <div className="project1">
->>>>>>> 48c1d570945ee37cb5448134f2e8df252992b684
           <div className="projectimg">
             <img src={img1} className="prjimgx" alt="Ecomerce"></img>
           </div>
@@ -25,11 +20,7 @@ function Projects() {
             <button>Live Demo</button>
           </div>
         </div>
-<<<<<<< HEAD
         <div className="project1 blocku">
-=======
-        <div className="project1">
->>>>>>> 48c1d570945ee37cb5448134f2e8df252992b684
           <div className="projectimg">
             <img src={img2} className="prjimgx" alt="Fitness"></img>
           </div>
@@ -39,11 +30,7 @@ function Projects() {
             <button>Live Demo</button>
           </div>
         </div>
-<<<<<<< HEAD
         <div className="project1 blockr">
-=======
-        <div className="project1">
->>>>>>> 48c1d570945ee37cb5448134f2e8df252992b684
           <div className="projectimg">
             <img src={img3} className="prjimgx" alt="Jakarta"></img>
           </div>
