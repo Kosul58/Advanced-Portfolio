@@ -6,6 +6,15 @@ import { FaCheckCircle } from "react-icons/fa";
 import characterimg from "../img/k12.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { TiHtml5 } from "react-icons/ti";
+import { FaPython } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaBootstrap } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Experience() {
@@ -27,6 +36,7 @@ function Experience() {
         scale: 1.5,
         translateX: "200px",
         ease: "ease",
+        opacity: 1,
       });
 
       gsap.to(".charactercontainer", {
@@ -53,6 +63,27 @@ function Experience() {
         opacity: 0,
       });
 
+      gsap.to(".expbox1", {
+        scrollTrigger: {
+          trigger: ".trig2",
+          start: "top 800px",
+          end: "top 900px",
+          scrub: 1,
+          // markers: true,
+        },
+        className: "displaynone",
+      });
+      gsap.to(".expbox2", {
+        scrollTrigger: {
+          trigger: ".trig2",
+          start: "top 800px",
+          end: "top 900px",
+          scrub: 1,
+          // markers: true,
+        },
+        className: "expbox2",
+      });
+
       gsap.to(".charactercontainer", {
         scrollTrigger: {
           trigger: ".trig3",
@@ -61,7 +92,7 @@ function Experience() {
           scrub: 1,
           // markers: true,
         },
-        translateX: "-400px",
+        translateX: "-300px",
         ease: "ease",
         opacity: 1,
       });
@@ -75,6 +106,10 @@ function Experience() {
           onLeaveBack: () => {
             gsap.to(".charactercontainer", {
               x: "300px",
+            });
+
+            gsap.to(".expinfox1", {
+              opacity: 1,
             });
           },
         },
@@ -127,6 +162,11 @@ function Experience() {
               gsap.to(".charactercontainer", {
                 x: "300px",
               });
+
+              gsap.to(".expinfox1", {
+                ease: "ease",
+                opacity: 1,
+              });
             },
           },
           ease: "ease",
@@ -152,6 +192,42 @@ function Experience() {
         translateX: "-180px",
         ease: "ease",
         opacity: 1,
+      });
+
+      gsap.to(".expbox3", {
+        scrollTrigger: {
+          trigger: ".trig4",
+          start: "top 80px",
+          end: "top 90px",
+          scrub: 1,
+          // markers: true,
+          toggleActions: "play none play reverse",
+          // onLeaveBack: () => {
+          //   gsap.to(".expbox3", {
+          //     className: "expbox3",
+          //   });
+          // },
+        },
+        className: "displaynone",
+      });
+      gsap.to(".expbox4", {
+        scrollTrigger: {
+          trigger: ".trig4",
+          start: "top 80px",
+          end: "top 90px",
+          scrub: 1,
+          // markers: true,
+          toggleActions: "play none play reverse",
+          // onLeaveBack: () => {
+          //   gsap.to(".expbox4", {
+          //     className: "displaynone",
+          //   });
+          //   gsap.to(".expbox3", {
+          //     className: "expbox3",
+          //   });
+          // },
+        },
+        className: "expbox4",
       });
     });
 
@@ -188,34 +264,39 @@ function Experience() {
             <div className="expbox1">
               <h1>Basics</h1>
               <div className="expbox101">
+                <TiHtml5 />
                 <h2>HTML</h2>
               </div>
               <div className="expbox101">
+                <FaCss3Alt />
                 <h2>CSS</h2>
               </div>
               <div className="expbox101">
+                <IoLogoJavascript />
                 <h2>JavaScript</h2>
               </div>
               <div className="expbox101">
+                <FaPython />
                 <h2>Python</h2>
               </div>
             </div>
-            <div className="expbox1">
+            <div className="expbox2 displaynone">
               <h1>FrameWork</h1>
               <div className="expbox101">
+                <FaReact />
                 <h2>React</h2>
               </div>
               <div className="expbox101">
+                <RiNextjsFill />
                 <h2>Next</h2>
               </div>
               <div className="expbox101">
+                <FaBootstrap />
                 <h2>Bootstrap</h2>
               </div>
               <div className="expbox101">
+                <RiTailwindCssFill />
                 <h2>Tailwind</h2>
-              </div>
-              <div className="expbox101">
-                <h2>Material UI</h2>
               </div>
             </div>
           </div>
@@ -223,7 +304,7 @@ function Experience() {
         <div className="expinfox2" ref={boxref2}>
           <h1>BackEnd</h1>
           <div className="expinfox11">
-            <div className="expbox1">
+            <div className="expbox3">
               <h1>Database</h1>
               <div className="expbox101">
                 <h2>MongoDB</h2>
@@ -232,7 +313,7 @@ function Experience() {
                 <h2>SQL</h2>
               </div>
             </div>
-            <div className="expbox1">
+            <div className="expbox4 displaynone">
               <h1>FrameWork</h1>
               <div className="expbox101">
                 <h2>NodeJs</h2>

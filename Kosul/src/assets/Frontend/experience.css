@@ -25,6 +25,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  opacity: 0;
 }
 
 .expinfox11 {
@@ -192,7 +193,7 @@
 .trig4 {
   background-color: yellow;
   position: relative;
-  top: 2800px;
+  top: 3200px;
   left: 100px;
   z-index: 8;
 }
@@ -257,17 +258,23 @@
   left: 400px;
 }
 
-.expbox1 {
+.expbox1,
+.expbox2,
+.expbox3,
+.expbox4 {
   width: 45%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2px;
+  gap: 10px;
 }
 
-.expbox1 h1 {
+.expbox1 h1,
+.expbox2 h1,
+.expbox3 h1,
+.expbox4 h1 {
   font-size: 30px;
   font-weight: 400;
   color: rgb(0, 0, 0);
