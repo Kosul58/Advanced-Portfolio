@@ -1,9 +1,10 @@
 import mongoose from "mongoose";
 import Email from "../database/customermail.cjs";
+import dotenv from "dotenv";
+dotenv.config();
 
 // Updated MongoDB connection URI
-const mongoURI =
-  "mongodb+srv://kosul:kosul@cluster0.jn30nsv.mongodb.net/kosulportfolio?retryWrites=true&w=majority&appName=nutriTrack";
+const mongoURI = process.env.MONGODB_URI;
 
 // Connect to MongoDB
 const connectDB = async () => {
@@ -46,6 +47,7 @@ const addemail = async (useremail) => {
   } finally {
     await closeConn();
   }
+  console.log(mongoURI);
 };
 
 export default addemail;

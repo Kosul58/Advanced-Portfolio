@@ -1,9 +1,10 @@
 .experiences {
   width: 100%;
-  height: 800vh;
+  height: 1400vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: rosybrown;
 }
 
 .expinfo {
@@ -161,8 +162,7 @@
 .trigx10 {
   width: 50px;
   height: 50px;
-  display: none;
-  background-color: rebeccapurple;
+  display: flex;
 }
 
 .trig1 {
@@ -173,10 +173,9 @@
 }
 
 .trig2 {
-  display: none;
-  background-color: red;
+  display: flex;
   position: relative;
-  top: 2350px;
+  top: 2650px;
   left: 400px;
   z-index: 8;
   width: 50px;
@@ -185,76 +184,33 @@
 
 .trig3 {
   position: relative;
-  top: 2550px;
+  top: 3550px;
   left: 100px;
   z-index: 8;
 }
 
 .trig4 {
-  background-color: yellow;
   position: relative;
-  top: 3200px;
+  top: 5000px;
   left: 100px;
   z-index: 8;
 }
 
 .trigx1 {
   position: relative;
-  top: 2300px;
+  top: 4600px;
   left: 400px;
 }
 
 .trigx2 {
   position: relative;
-  top: 2200px;
-  left: 400px;
-}
-
-.trigx3 {
-  position: relative;
-  top: 2100px;
+  top: 7300px;
   left: 400px;
 }
 
 .trigx4 {
   position: relative;
-  top: 1900px;
-  left: 400px;
-}
-
-.trigx5 {
-  position: relative;
-  top: 1700px;
-  left: 400px;
-}
-
-.trigx6 {
-  position: relative;
-  top: 1500px;
-  left: 400px;
-}
-
-.trigx7 {
-  position: relative;
-  top: 1300px;
-  left: 400px;
-}
-
-.trigx8 {
-  position: relative;
-  top: 1100px;
-  left: 400px;
-}
-
-.trigx9 {
-  position: relative;
-  top: 900px;
-  left: 400px;
-}
-
-.trigx10 {
-  position: relative;
-  top: 700px;
+  top: 7600px;
   left: 400px;
 }
 
@@ -271,6 +227,10 @@
   gap: 10px;
 }
 
+.expbox4 {
+  display: none;
+}
+
 .expbox1 h1,
 .expbox2 h1,
 .expbox3 h1,
@@ -282,20 +242,40 @@
   /* border: 2px solid rgb(0, 0, 0); */
 }
 
+.expboxer {
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.expbox10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .expbox101 {
   display: flex;
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 50px;
-  background-color: rgba(140, 81, 81, 0.2);
+  width: 140px;
+  height: 140px;
+  background-color: rgba(245, 234, 234, 0.2);
   border-radius: 14px;
 }
 
 .expbox101:hover {
   background-color: rgba(176, 34, 100, 0.2);
+  color: white;
+  scale: 1.1;
 }
+
 .expbox101 h2 {
   font-size: 20px;
   font-weight: 400;
@@ -303,6 +283,10 @@
   margin: 0;
 }
 
-.expbox101 h2:hover {
-  color: rgb(255, 255, 255);
+.leftshift {
+  left: 300px;
+}
+
+.leftside {
+  transform: translate(-300px, 0px) !important;
 }

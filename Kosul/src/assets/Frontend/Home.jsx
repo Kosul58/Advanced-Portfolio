@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import kosul22 from "../img/kosul22.jpg";
 import kosul20 from "../img/kosul20.jpg";
+import SplitText from "./splittext";
 
 function Home({ scrollToAbout }) {
   const downloadFile = () => {
@@ -12,6 +13,11 @@ function Home({ scrollToAbout }) {
     link.click();
     document.body.removeChild(link);
   };
+
+  const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+  };
+
   return (
     <>
       <div className="home">
@@ -24,9 +30,57 @@ function Home({ scrollToAbout }) {
             ></img>
           </div>
           <div className="selfinfo ">
-            <h1 className="animate-pop-in">Hello, I'm</h1>
-            <h1 className="animate-pop-in">Kosul Gurung</h1>
-            <h1 className="animate-pop-in">Full Stack Developer</h1>
+            <h1 style={{ fontSize: "4rem" }}>
+              <SplitText
+                text="Hello, I am"
+                className="text-2xl font-semibold text-center"
+                delay={50}
+                animationFrom={{
+                  opacity: 0,
+                  transform: "translate3d(0,50px,0)",
+                }}
+                animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+                easing="easeOutCubic"
+                threshold={0.2}
+                rootMargin="-50px"
+                onLetterAnimationComplete={handleAnimationComplete}
+              />
+            </h1>
+            <h1 style={{ fontSize: "3rem", marginTop: "-1rem" }}>
+              <SplitText
+                text="Kosul Gurung"
+                className="text-2xl font-semibold text-center"
+                delay={60}
+                animationFrom={{
+                  opacity: 0,
+                  transform: "translate3d(0,50px,0)",
+                }}
+                animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+                easing="easeOutCubic"
+                threshold={0.2}
+                rootMargin="-50px"
+                onLetterAnimationComplete={handleAnimationComplete}
+              />
+            </h1>
+            <h1 style={{ fontSize: "3rem", marginTop: "-5px" }}>
+              <SplitText
+                text="Full Stack Developer"
+                className="text-2xl font-semibold text-center"
+                delay={70}
+                animationFrom={{
+                  opacity: 0,
+                  transform: "translate3d(0,50px,0)",
+                }}
+                animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+                easing="easeOutCubic"
+                threshold={0.2}
+                rootMargin="-50px"
+                onLetterAnimationComplete={handleAnimationComplete}
+              />
+            </h1>
+
+            {/* <h1 className="animate-pop-in">Kosul Gurung</h1>
+            <h1 className="animate-pop-in">Full Stack Developer</h1> */}
             <div>
               <button className="button1" onClick={downloadFile}>
                 Download CV

@@ -14,6 +14,12 @@ import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { BsFiletypeSql } from "react-icons/bs";
+import { FaNodeJs } from "react-icons/fa";
+import { SiFlask } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { FaLaravel } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,8 +33,8 @@ function Experience() {
       gsap.to(".expinfox1", {
         scrollTrigger: {
           trigger: ".trig1",
-          start: "top 400px",
-          end: "top 200px",
+          start: "top 300px",
+          end: "top 100px",
           // markers: true,
           scrub: 1,
           toggleActions: "play reverse play reverse",
@@ -43,7 +49,7 @@ function Experience() {
         scrollTrigger: {
           trigger: ".trig1",
           start: "top 400px",
-          end: "top 200px",
+          end: "top 100px",
           // markers: true,
           scrub: 1,
         },
@@ -51,184 +57,244 @@ function Experience() {
         ease: "ease",
       });
 
-      gsap.to(".expinfox1", {
-        scrollTrigger: {
-          trigger: ".trig3",
-          start: "top 800px",
-          end: "top 900px",
-          scrub: 1,
-          // markers: true,
-        },
-        ease: "ease",
-        opacity: 0,
-      });
-
       gsap.to(".expbox1", {
         scrollTrigger: {
           trigger: ".trig2",
           start: "top 800px",
-          end: "top 900px",
+          end: "top 800px",
           scrub: 1,
           // markers: true,
         },
         className: "displaynone",
       });
+
+      gsap.to(".charactercontainer", {
+        scrollTrigger: {
+          trigger: ".trig2",
+          start: "top 800px",
+          end: "top 800px",
+          scrub: 1,
+          // markers: true,
+        },
+        left: "300px",
+        className: "charactercontainer leftshift",
+      });
+
       gsap.to(".expbox2", {
         scrollTrigger: {
           trigger: ".trig2",
           start: "top 800px",
-          end: "top 900px",
+          end: "top 800px",
           scrub: 1,
-          // markers: true,
         },
         className: "expbox2",
+      });
+
+      gsap.to(".expinfox1", {
+        scrollTrigger: {
+          trigger: ".trig3",
+          start: "top 750px",
+          end: "top 800px",
+          scrub: 1,
+          toggleActions: "play reverse play reverse",
+          onLeaveBack: () => {
+            document.querySelector(".expinfox1").style.display = "flex";
+          },
+          onLeave: () => {
+            document.querySelector(".expinfox1").style.display = "none";
+          },
+        },
       });
 
       gsap.to(".charactercontainer", {
         scrollTrigger: {
           trigger: ".trig3",
-          start: "top 400px",
-          end: "top 200px",
+          start: "top 750px",
+          end: "top 800px",
           scrub: 1,
-          // markers: true,
+          onEnterBack: () => {
+            gsap.to(".charactercontainer", {
+              className: "charactercontainer leftshift",
+            });
+          },
         },
-        translateX: "-300px",
+        position: "300px",
         ease: "ease",
-        opacity: 1,
       });
 
       gsap.to(".charactercontainer", {
         scrollTrigger: {
-          trigger: ".trig2",
-          start: "top 300px",
-          end: "top 500px",
-          // markers: true,
+          trigger: ".trig4",
+          start: "top 400px",
+          end: "top 600px",
+          toggleActions: "play reverse play reverse",
           onLeaveBack: () => {
             gsap.to(".charactercontainer", {
-              x: "300px",
+              x: "-300px",
             });
-
-            gsap.to(".expinfox1", {
-              opacity: 1,
+          },
+          onEnter: () => {
+            gsap.to(".charactercontainer", {
+              x: "-300px",
             });
           },
         },
         ease: "ease",
+        opacity: 1,
+      });
+
+      gsap.to(".expinfox2", {
+        scrollTrigger: {
+          trigger: ".trig4",
+          start: "top 400px",
+          end: "top 200px",
+          // markers: true,
+          toggleActions: "play none play reverse",
+        },
+        ease: "ease",
+        translateX: "300px",
         opacity: 1,
       });
 
       gsap.to(".charactercontainer", {
         scrollTrigger: {
           trigger: ".trigx1",
-          start: "top 300px",
+          start: "top 700px",
           end: "top 500px",
           // markers: true,
-          toggleActions: "play reverse play reverse",
-          onLeaveBack: () => {
-            gsap.to(".charactercontainer", {
-              x: "300px",
-            });
-          },
-        },
-        ease: "ease",
-        opacity: 1,
-      });
-
-      gsap.to(".charactercontainer", {
-        scrollTrigger: {
-          trigger: ".trigx2",
-          start: "top 400px",
-          end: "top 600px",
-          // markers: true,
-          toggleActions: "play reverse play reverse",
-          onLeaveBack: () => {
-            gsap.to(".charactercontainer", {
-              x: "300px",
-            });
-          },
-        },
-        ease: "ease",
-        opacity: 1,
-      });
-      const trigd = function (c) {
-        gsap.to(".charactercontainer", {
-          scrollTrigger: {
-            trigger: c,
-            start: "top 400px",
-            end: "top 600px",
-            // markers: true,
-            toggleActions: "play reverse play reverse",
-            onLeaveBack: () => {
-              gsap.to(".charactercontainer", {
-                x: "300px",
-              });
-
-              gsap.to(".expinfox1", {
-                ease: "ease",
-                opacity: 1,
-              });
-            },
-          },
-          ease: "ease",
-          opacity: 1,
-        });
-      };
-      trigd(".trigx3");
-      trigd(".trigx4");
-      trigd(".trigx5");
-      trigd(".trigx6");
-      trigd(".trigx7");
-      trigd(".trigx8");
-
-      gsap.to(".expinfox2", {
-        scrollTrigger: {
-          trigger: ".trig3",
-          start: "top 400px",
-          end: "top 200px",
           scrub: 1,
-          // markers: true,
+          onEnterBack: () => {
+            gsap.to(".charactercontainer", {
+              x: "300px",
+            });
+          },
+          onEnter: () => {
+            gsap.to(".charactercontainer", {
+              x: "-300px",
+            });
+          },
         },
-        scale: 1.5,
-        translateX: "-180px",
         ease: "ease",
-        opacity: 1,
       });
 
       gsap.to(".expbox3", {
         scrollTrigger: {
-          trigger: ".trig4",
-          start: "top 80px",
-          end: "top 90px",
-          scrub: 1,
+          trigger: ".trigx2",
+          start: "top 400px",
+          end: "top 400px",
           // markers: true,
+          scrub: 1,
           toggleActions: "play none play reverse",
-          // onLeaveBack: () => {
-          //   gsap.to(".expbox3", {
-          //     className: "expbox3",
-          //   });
-          // },
+
+          onEnter: () => {
+            document.querySelector(".expbox3").style.display = "none";
+          },
+          onEnterBack: () => {
+            document.querySelector(".expbox3").style.display = "flex";
+          },
         },
-        className: "displaynone",
+        ease: "ease",
       });
+
       gsap.to(".expbox4", {
         scrollTrigger: {
-          trigger: ".trig4",
-          start: "top 80px",
-          end: "top 90px",
-          scrub: 1,
+          trigger: ".trigx4",
+          start: "top 300px",
+          end: "top 200px",
           // markers: true,
-          toggleActions: "play none play reverse",
-          // onLeaveBack: () => {
-          //   gsap.to(".expbox4", {
-          //     className: "displaynone",
-          //   });
-          //   gsap.to(".expbox3", {
-          //     className: "expbox3",
-          //   });
-          // },
+          scrub: 1,
+          onEnter: () => {
+            document.querySelector(".expbox4").style.display = "flex";
+          },
+          onEnterBack: () => {
+            document.querySelector(".expbox4").style.display = "none";
+          },
         },
-        className: "expbox4",
       });
+
+      gsap.to(".charactercontainer", {
+        scrollTrigger: {
+          trigger: ".trigx4",
+          start: "top 300px",
+          end: "top 200px",
+          // markers: true,
+          scrub: 1,
+          toggleActions: "play reverse play none",
+          onEnterBack: () => {
+            gsap.to(".charactercontainer", {
+              className: "charactercontainer leftshift",
+            });
+          },
+        },
+        className: "charactercontainer leftside",
+      });
+
+      // const trigd = function (c) {
+      //   gsap.to(".charactercontainer", {
+      //     scrollTrigger: {
+      //       trigger: c,
+      //       start: "top 400px",
+      //       end: "top 600px",
+      //       // markers: true,
+      //       toggleActions: "play reverse play reverse",
+      //       onLeaveBack: () => {
+      //         gsap.to(".charactercontainer", {
+      //           x: "300px",
+      //         });
+
+      //         gsap.to(".expinfox1", {
+      //           ease: "ease",
+      //           opacity: 1,
+      //         });
+      //       },
+      //     },
+      //     ease: "ease",
+      //     opacity: 1,
+      //   });
+      // };
+      // trigd(".trigx3");
+      // trigd(".trigx4");
+      // trigd(".trigx5");
+      // trigd(".trigx6");
+      // trigd(".trigx7");
+      // trigd(".trigx8");
+
+      // gsap.to(".expinfox2", {
+      //   scrollTrigger: {
+      //     trigger: ".trig3",
+      //     start: "top 400px",
+      //     end: "top 200px",
+      //     scrub: 1,
+      //     // markers: true,
+      //   },
+      //   scale: 1.5,
+      //   translateX: "-180px",
+      //   ease: "ease",
+      //   opacity: 1,
+      // });
+
+      // gsap.to(".expbox3", {
+      //   scrollTrigger: {
+      //     trigger: ".trig4",
+      //     start: "top 80px",
+      //     end: "top 90px",
+      //     scrub: 1,
+      //     // markers: true,
+      //     toggleActions: "play none play reverse",
+      //   },
+      //   className: "displaynone",
+      // });
+      // gsap.to(".expbox4", {
+      //   scrollTrigger: {
+      //     trigger: ".trig4",
+      //     start: "top 80px",
+      //     end: "top 90px",
+      //     scrub: 1,
+      //     // markers: true,
+      //     toggleActions: "play none play reverse",
+      //   },
+      //   className: "expbox4",
+      // });
     });
 
     return () => ctx.revert();
@@ -263,40 +329,52 @@ function Experience() {
           <div className="expinfox11">
             <div className="expbox1">
               <h1>Basics</h1>
-              <div className="expbox101">
-                <TiHtml5 />
-                <h2>HTML</h2>
-              </div>
-              <div className="expbox101">
-                <FaCss3Alt />
-                <h2>CSS</h2>
-              </div>
-              <div className="expbox101">
-                <IoLogoJavascript />
-                <h2>JavaScript</h2>
-              </div>
-              <div className="expbox101">
-                <FaPython />
-                <h2>Python</h2>
+              <div className="expboxer">
+                <div className="expbox10">
+                  <div className="expbox101">
+                    <TiHtml5 />
+                    <p>HTML</p>
+                  </div>
+                  <div className="expbox101">
+                    <FaCss3Alt />
+                    <p>CSS</p>
+                  </div>
+                </div>
+                <div className="expbox10">
+                  <div className="expbox101">
+                    <IoLogoJavascript />
+                    <p>JavaScript</p>
+                  </div>
+                  <div className="expbox101">
+                    <FaPython />
+                    <p>Python</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="expbox2 displaynone">
               <h1>FrameWork</h1>
-              <div className="expbox101">
-                <FaReact />
-                <h2>React</h2>
-              </div>
-              <div className="expbox101">
-                <RiNextjsFill />
-                <h2>Next</h2>
-              </div>
-              <div className="expbox101">
-                <FaBootstrap />
-                <h2>Bootstrap</h2>
-              </div>
-              <div className="expbox101">
-                <RiTailwindCssFill />
-                <h2>Tailwind</h2>
+              <div className="expboxer">
+                <div className="expbox10">
+                  <div className="expbox101">
+                    <FaReact />
+                    <p>React JS</p>
+                  </div>
+                  <div className="expbox101">
+                    <RiNextjsFill />
+                    <p>Next JS</p>
+                  </div>
+                </div>
+                <div className="expbox10">
+                  <div className="expbox101">
+                    <FaBootstrap />
+                    <p>Bootstrap</p>
+                  </div>
+                  <div className="expbox101">
+                    <RiTailwindCssFill />
+                    <p>Tailwind</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -306,23 +384,42 @@ function Experience() {
           <div className="expinfox11">
             <div className="expbox3">
               <h1>Database</h1>
-              <div className="expbox101">
-                <h2>MongoDB</h2>
-              </div>
-              <div className="expbox101">
-                <h2>SQL</h2>
+              <div className="expboxer">
+                <div className="expbox10">
+                  <div className="expbox101">
+                    <SiMongodb />
+                    <p>MongoDB</p>
+                  </div>
+                  <div className="expbox101">
+                    <BsFiletypeSql />
+                    <p>SQL</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="expbox4 displaynone">
+            <div className="expbox4">
               <h1>FrameWork</h1>
-              <div className="expbox101">
-                <h2>NodeJs</h2>
-              </div>
-              <div className="expbox101">
-                <h2>ExpressJs</h2>
-              </div>
-              <div className="expbox101">
-                <h2>Flask</h2>
+              <div className="expboxer">
+                <div className="expbox10">
+                  <div className="expbox101">
+                    <FaNodeJs />
+                    <p>NodeJs</p>
+                  </div>
+                  <div className="expbox101">
+                    <SiExpress />
+                    <p>ExpressJs</p>
+                  </div>
+                </div>
+                <div className="expbox10">
+                  <div className="expbox101">
+                    <SiFlask />
+                    <p>Flask</p>
+                  </div>
+                  <div className="expbox101">
+                    <FaLaravel />
+                    <p>Laravel</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

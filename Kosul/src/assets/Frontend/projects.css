@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(63, 229, 215, 0.5);
 }
 
 .projects h2 {
@@ -65,6 +66,7 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  background-color: rgba(215, 116, 116, 0.8);
   box-shadow: rgba(78, 71, 71, 0.4) 0px 0px 10px;
 }
 .projectimg {

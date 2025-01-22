@@ -4,7 +4,7 @@
   margin-top: 80px;
   display: flex;
   align-items: center;
-
+  background-color: rgba(103, 42, 218, 0.5);
   flex-direction: column;
   /* border: 2px solid rgb(0, 0, 0); */
 }
@@ -100,7 +100,9 @@
   justify-content: space-evenly;
   flex-direction: column;
   border-radius: 20px;
-  border: 2px solid rgb(0, 0, 0);
+  backdrop-filter: blur(10px);
+  background-color: rgba(242, 238, 238, 0.2);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 .aboutinfox2 {
   margin-top: -2rem;
