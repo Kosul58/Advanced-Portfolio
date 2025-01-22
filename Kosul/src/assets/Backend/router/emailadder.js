@@ -32,13 +32,19 @@ const closeConn = async () => {
 const addemail = async (useremail) => {
   await connectDB();
   try {
-    const user = await Email.findOne({ email: useremail });
+    const { email, number, name, message } = useremail;
 
+    const user = await Email.findOne({ email: email });
     if (user) {
       console.log("User already exists");
     } else {
-      const email = new Email({ email: useremail });
-      const savedEmail = await email.save();
+      const data = new Email({
+        email: email,
+        number: number,
+        name: name,
+        message: message,
+      });
+      const savedEmail = await data.save();
       console.log("Email saved:", savedEmail);
     }
   } catch (error) {
@@ -47,7 +53,6 @@ const addemail = async (useremail) => {
   } finally {
     await closeConn();
   }
-  console.log(mongoURI);
 };
 
 export default addemail;

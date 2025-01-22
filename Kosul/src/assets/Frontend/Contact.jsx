@@ -6,6 +6,9 @@ import { useRef, useState } from "react";
 
 function Contact() {
   const emailref = useRef(null);
+  const nameref = useRef(null);
+  const numberref = useRef(null);
+  const messageref = useRef(null);
   const submitemail = async () => {
     const email = emailref.current.value;
     console.log(email);
@@ -16,7 +19,12 @@ function Contact() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email: email }),
+        body: JSON.stringify({
+          email: email,
+          name: nameref.current.value,
+          number: numberref.current.value,
+          message: messageref.current.value,
+        }),
       });
       const data = await response.json();
       console.log(data);
@@ -28,20 +36,26 @@ function Contact() {
     <div className="contact">
       <h2>Get In Touch</h2>
       <h1>Contact Me</h1>
-      <div className="contactx">
-        <div className="emailinfo">
-          <MdEmail size={100} />
-          Email: kosulgrg@gmail.com
+      <div className="contacter">
+        <div className="contacty">
+          <div className="submityouremail">
+            <input type="text" placeholder="Your Name" ref={nameref} />
+            <input type="email" placeholder="Your Email" ref={emailref} />
+            <input type="text" placeholder="Your Number" ref={numberref} />
+            <input type="text" placeholder="Your Message" ref={messageref} />
+            <button onClick={submitemail}>Submit</button>
+          </div>
         </div>
-        <div className="emailinfo">
-          <IoIosCall size={100} />
-          Phone: +977 9816143286
+        <div className="contactx">
+          <div className="emailinfo">
+            <MdEmail size={100} />
+            Email: kosulgrg@gmail.com
+          </div>
+          <div className="emailinfo">
+            <IoIosCall size={100} />
+            Phone: +977 9816143286
+          </div>
         </div>
-      </div>
-      <h3>Submit Your Email</h3>
-      <div className="submityouremail">
-        <input type="email" placeholder="Your Email" ref={emailref} />
-        <button onClick={submitemail}>Submit</button>
       </div>
     </div>
   );
