@@ -40,7 +40,7 @@ function Navbar({ scrollToAbout }) {
             </h2>
           </div>
         </div>
-        <div>
+        <div className="burgerx">
           <div className="menuopen" onClick={() => openmenu()} ref={optionref}>
             <MdOutlineMenu size={50} />{" "}
           </div>
