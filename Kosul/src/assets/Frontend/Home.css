@@ -4,9 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\public\kosul.jpg");
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  scrollbar-width: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .landingpage {
   margin-top: 10rem;
