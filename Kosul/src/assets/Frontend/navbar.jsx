@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.css";
 import { useRef, useEffect, useState } from "react";
 import { MdOutlineMenu } from "react-icons/md";
+import kosul20 from "../img/kosul20.jpg";
 import { IoIosCloseCircle } from "react-icons/io";
 
 function Navbar({ scrollToAbout }) {
@@ -22,6 +23,7 @@ function Navbar({ scrollToAbout }) {
       <div className="nav">
         <div className="navbar" ref={navref}>
           <h1 className="navg" onClick={() => scrollToAbout(4)}>
+            <img src={kosul20}></img>
             Kosul Gurung
           </h1>
 

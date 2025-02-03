@@ -1,7 +1,6 @@
 import React from "react";
 import "./about.css";
 import kosul22 from "../img/kosul22.jpg";
-import kosul20 from "../img/kosul20.jpg";
 import { PiMedalDuotone } from "react-icons/pi";
 import { PiStudentFill } from "react-icons/pi";
 

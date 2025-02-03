@@ -138,10 +138,21 @@
   /* border: 2px solid rgb(0, 0, 0); */
 }
 
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
 .aboutimgx1 {
   width: 600px;
   height: 600px;
   background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\rb.png");
   background-size: cover;
   background-position: left;
+  /* animation: wave 1s infinite ease-in-out; */
 }

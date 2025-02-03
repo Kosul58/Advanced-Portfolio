@@ -1,8 +1,7 @@
 import React from "react";
 import "./Home.css";
 import kosul22 from "../img/kosul22.jpg";
-import kosul20 from "../img/kosul20.jpg";
-import SplitText from "./splittext";
+
 import BlurText from "./blurtext";
 
 function Home({ scrollToAbout }) {
