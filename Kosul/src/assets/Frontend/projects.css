@@ -1,10 +1,10 @@
 .projects {
   width: 100%;
-  height: 350svh;
+  height: 1500svh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(153, 160, 205);
+  background-color: rgb(51, 51, 56);
 }
 
 .projects h2 {
@@ -23,21 +23,162 @@
   /* border: 2px solid rgb(0, 0, 0); */
 }
 
-.projectsx {
-  width: 90%;
-  height: 50%;
+.projecty {
+  width: 100%;
+  height: 900svh;
+  /* border: 2px solid red; */
+}
+
+.parentzoomout {
+  margin-top: 2rem;
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+}
+.parentzoom {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 100svh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.childz1 {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  width: 300px;
+  height: 250px;
+  background-color: red;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.childz2 {
+  position: absolute;
+  top: 0px;
+  left: 600px;
+  width: 400px;
+  height: 250px;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.childz3 {
+  position: absolute;
+  top: 300px;
+  right: 200px;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(199, 213, 172);
+  overflow: hidden;
+  border-radius: 8px;
+}
+.childz4 {
+  position: absolute;
+  top: 500px;
+  left: 250px;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(166, 72, 72);
+  overflow: hidden;
+  border-radius: 8px;
+}
+.childz5 {
+  width: 400px;
+  height: 200px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.mainprojectimg {
+  width: 60%;
+  height: 70%;
+  background-color: aliceblue;
+  border-radius: 4px;
+}
+
+.mainprojectdesc {
+  position: sticky;
+  opacity: 1;
+  z-index: 5;
+  top: 150px;
+  left: 75%;
+  width: 300px;
+  height: 500px;
+  background-color: rgba(182, 167, 167, 0.9);
+  border-radius: 12px;
+  opacity: 0;
+  scale: 0.2;
+}
+
+.childz6 {
+  position: absolute;
+  top: 550px;
+  left: 600px;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(151, 140, 43);
+  overflow: hidden;
+  border-radius: 8px;
+}
+.childz7 {
+  position: absolute;
+  top: 550px;
+  right: 300px;
+  width: 200px;
+  height: 150px;
+  background-color: rgb(147, 66, 159);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.projectsx {
+  border: 2px solid whitesmoke;
+  width: 90%;
+  height: 500svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  gap: 10rem;
+}
+
+.ptrig1 {
+  position: relative;
+  top: 1200px;
+  width: 10px;
+  height: 10px;
+  z-index: 10;
+}
+
+.ptrig2 {
+  position: relative;
+  top: 3000px;
+  width: 10px;
+  height: 10px;
+  z-index: 10;
+}
+.ptrig3 {
+  position: relative;
+  top: 5000px;
+  width: 10px;
+  height: 10px;
+  z-index: 10;
 }
 
 .aboutl,
 .aboutu,
 .aboutr {
-  margin-top: 10rem;
-  width: 85%;
-  height: 85%;
+  width: 60svw;
+  height: 85svh;
 }
 
 .project1 {
