@@ -27,6 +27,7 @@
   justify-content: center;
   flex-direction: column;
   opacity: 0;
+  box-shadow: 2px 2px 12px rgba(114, 115, 118, 0.5);
 }
 
 .expinfox11 {
@@ -184,7 +185,6 @@
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  border: 2px solid black;
 }
 
 .expbox10 {
@@ -199,14 +199,15 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   background-color: rgba(245, 234, 234, 0.2);
   border-radius: 14px;
+  flex-direction: column;
 }
 
 .expbox101:hover {
-  background-color: rgba(176, 34, 100, 0.2);
+  background-color: rgba(220, 229, 221, 0.5);
   color: white;
   scale: 1.1;
 }
@@ -239,4 +240,97 @@
   color: rgb(24, 7, 7);
   margin-top: -0.5rem;
   /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.eimg {
+  width: 80px;
+  height: 80px;
+}
+
+.eimg1 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\HTML5.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.eimg2 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\CSS3.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg3 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\JavaScript.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.eimg4 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\TypeScript.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg5 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\Python.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg6 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\react.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg7 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\Next.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg8 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\vue.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg9 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\Bootstrap.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg10 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\Tailwind.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg11 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\MongoDB.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg12 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\MySQL.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg13 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\PostgresSQL.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg14 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\Node.js.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg15 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\Express.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg16 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\Flask.png");
+  background-size: cover;
+  background-position: center;
+}
+.eimg17 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\Laravel.png");
+  background-size: cover;
+  background-position: center;
 }

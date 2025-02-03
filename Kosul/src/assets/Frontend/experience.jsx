@@ -266,20 +266,25 @@ function Experience() {
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
+                    <div className="eimg eimg1"></div>
                     <p>HTML</p>
                   </div>
                   <div className="expbox101">
+                    <div className="eimg eimg2"></div>
                     <p>CSS</p>
                   </div>
                   <div className="expbox101">
+                    <div className="eimg eimg3"></div>
                     <p>JavaScript</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
+                    <div className="eimg eimg4"></div>
                     <p>TypeScript</p>
                   </div>
                   <div className="expbox101">
+                    <div className="eimg eimg5"></div>
                     <p>Python</p>
                   </div>
                 </div>
@@ -290,20 +295,25 @@ function Experience() {
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
+                    <div className="eimg eimg6"></div>
                     <p>ReactJS</p>
                   </div>
                   <div className="expbox101">
+                    <div className="eimg eimg7"></div>
                     <p>Next.JS</p>
                   </div>
                   <div className="expbox101">
-                    <p>Vite.JS</p>
+                    <div className="eimg eimg8"></div>
+                    <p>Vue.JS</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
+                    <div className="eimg eimg9"></div>
                     <p>Bootstrap</p>
                   </div>
                   <div className="expbox101">
+                    <div className="eimg eimg10"></div>
                     <p>Tailwind</p>
                   </div>
                 </div>
@@ -319,14 +329,17 @@ function Experience() {
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
+                    <div className="eimg eimg11"></div>
                     <p>MongoDB</p>
                   </div>
                   <div className="expbox101">
+                    <div className="eimg eimg12"></div>
                     <p>MySQL</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
+                    <div className="eimg eimg13"></div>
                     <p>PostgreSQl</p>
                   </div>
                 </div>
@@ -337,17 +350,21 @@ function Experience() {
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
+                    <div className="eimg eimg14"></div>
                     <p>NodeJs</p>
                   </div>
                   <div className="expbox101">
+                    <div className="eimg eimg15"></div>
                     <p>ExpressJs</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
+                    <div className="eimg eimg16"></div>
                     <p>Flask</p>
                   </div>
                   <div className="expbox101">
+                    <div className="eimg eimg17"></div>
                     <p>Laravel</p>
                   </div>
                 </div>

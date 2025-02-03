@@ -11,8 +11,8 @@ function Home({ scrollToAbout }) {
   };
   const downloadFile = () => {
     const link = document.createElement("a");
-    link.href = "/kosul.pdf"; // File relative to the public folder
-    link.download = "kosul.pdf"; // The name of the file to save as
+    link.href = "/KosulGurung2.pdf"; // File relative to the public folder
+    link.download = "KosulGurung.pdf"; // The name of the file to save as
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
