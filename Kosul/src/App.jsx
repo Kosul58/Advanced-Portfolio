@@ -38,11 +38,11 @@ function App() {
       <div ref={aboutRef}>
         <About />
       </div>
-      <div ref={projectsRef}>
-        <Projects />
-      </div>
       <div ref={experienceRef}>
         <Experience />
+      </div>
+      <div ref={projectsRef}>
+        <Projects />
       </div>
       <div ref={contactRef}>
         <Contact />

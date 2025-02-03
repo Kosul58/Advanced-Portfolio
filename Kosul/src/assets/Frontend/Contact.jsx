@@ -37,6 +37,15 @@ function Contact() {
       <h2>Get In Touch</h2>
       <h1>Contact Me</h1>
       <div className="contacter">
+        <div className="contactx">
+          <div className="contactimg"></div>
+          <div className="emailinfo">
+            <MdEmail size={30} />: kosulgrg@gmail.com
+          </div>
+          <div className="emailinfo">
+            <IoIosCall size={30} /> :+977 9816143286
+          </div>
+        </div>
         <div className="contacty">
           <div className="submityouremail">
             <input type="text" placeholder="Your Name" ref={nameref} />
@@ -44,16 +53,6 @@ function Contact() {
             <input type="text" placeholder="Your Number" ref={numberref} />
             <input type="text" placeholder="Your Message" ref={messageref} />
             <button onClick={submitemail}>Submit</button>
-          </div>
-        </div>
-        <div className="contactx">
-          <div className="emailinfo">
-            <MdEmail size={100} />
-            Email: kosulgrg@gmail.com
-          </div>
-          <div className="emailinfo">
-            <IoIosCall size={100} />
-            Phone: +977 9816143286
           </div>
         </div>
       </div>

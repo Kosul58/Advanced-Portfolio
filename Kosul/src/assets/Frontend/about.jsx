@@ -13,14 +13,15 @@ const About = () => {
         <h2>Get to know more</h2>
         <h1>About Me</h1>
         <div className="aboutx">
-          <div className="aboutimg block">
-            <img src={kosul22} alt="Kosul Gurung" className="aboutimg2"></img>
-          </div>
+          <div className="aboutimgx1 block"></div>
           <div className="aboutinfo">
+            <div className="aboutimg block2">
+              <img src={kosul22} alt="Kosul Gurung" className="aboutimg2"></img>
+            </div>
             <div className="aboutinfox">
               <div className="experience block2">
                 <h4>
-                  <PiMedalDuotone size={30} />
+                  <PiMedalDuotone size={30} color="white" />
                 </h4>
                 <h3>Experience</h3>
                 <p>
@@ -29,7 +30,7 @@ const About = () => {
               </div>
               <div className="education block2">
                 <h4>
-                  <PiStudentFill size={30} />
+                  <PiStudentFill size={30} color="white" />
                 </h4>
                 <h3>Education</h3>
                 <p>
@@ -37,14 +38,14 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="aboutinfox2">
-              <p>
+            {/* <div className="aboutinfox2">
+              <p style={{ color: "white" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

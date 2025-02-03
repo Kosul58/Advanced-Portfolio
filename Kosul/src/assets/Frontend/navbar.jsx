@@ -29,11 +29,11 @@ function Navbar({ scrollToAbout }) {
             <h2 className="navg" onClick={() => scrollToAbout(0)}>
               About
             </h2>
-            <h2 className="navg" onClick={() => scrollToAbout(1)}>
-              Projects
-            </h2>
             <h2 className="navg" onClick={() => scrollToAbout(2)}>
               Experience
+            </h2>
+            <h2 className="navg" onClick={() => scrollToAbout(1)}>
+              Projects
             </h2>
             <h2 className="navg" onClick={() => scrollToAbout(3)}>
               Contact

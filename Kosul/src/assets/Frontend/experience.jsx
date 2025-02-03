@@ -39,7 +39,7 @@ function Experience() {
           scrub: 1,
           toggleActions: "play reverse play reverse",
         },
-        scale: 1.4,
+        scale: 1.5,
         translateX: "200px",
         ease: "ease",
         opacity: 1,
@@ -130,12 +130,12 @@ function Experience() {
           toggleActions: "play reverse play reverse",
           onLeaveBack: () => {
             gsap.to(".charactercontainer", {
-              x: "-300px",
+              x: "-325px",
             });
           },
           onEnter: () => {
             gsap.to(".charactercontainer", {
-              x: "-300px",
+              x: "-325px",
             });
           },
         },
@@ -152,8 +152,8 @@ function Experience() {
           toggleActions: "play none play reverse",
         },
         ease: "ease",
-        scale: 1.3,
-        translateX: "300px",
+        scale: 1.5,
+        translateX: "250px",
         opacity: 1,
       });
 
@@ -166,12 +166,12 @@ function Experience() {
           scrub: 1,
           onEnterBack: () => {
             gsap.to(".charactercontainer", {
-              x: "300px",
+              x: "325px",
             });
           },
           onEnter: () => {
             gsap.to(".charactercontainer", {
-              x: "-300px",
+              x: "-325px",
             });
           },
         },
@@ -200,8 +200,8 @@ function Experience() {
       gsap.to(".expbox4", {
         scrollTrigger: {
           trigger: ".trigx4",
-          start: "top 300px",
-          end: "top 200px",
+          start: "top 700px",
+          end: "top 700px",
           // markers: true,
           scrub: 1,
           onEnter: () => {
@@ -266,46 +266,44 @@ function Experience() {
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
-                    <TiHtml5 />
                     <p>HTML</p>
                   </div>
                   <div className="expbox101">
-                    <FaCss3Alt />
                     <p>CSS</p>
+                  </div>
+                  <div className="expbox101">
+                    <p>JavaScript</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
-                    <IoLogoJavascript />
-                    <p>JavaScript</p>
+                    <p>TypeScript</p>
                   </div>
                   <div className="expbox101">
-                    <FaPython />
                     <p>Python</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="expbox2 displaynone">
-              <h1>FrameWork</h1>
+              <h1>FrameWorks</h1>
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
-                    <FaReact />
-                    <p>React JS</p>
+                    <p>ReactJS</p>
                   </div>
                   <div className="expbox101">
-                    <RiNextjsFill />
-                    <p>Next JS</p>
+                    <p>Next.JS</p>
+                  </div>
+                  <div className="expbox101">
+                    <p>Vite.JS</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
-                    <FaBootstrap />
                     <p>Bootstrap</p>
                   </div>
                   <div className="expbox101">
-                    <RiTailwindCssFill />
                     <p>Tailwind</p>
                   </div>
                 </div>
@@ -317,40 +315,39 @@ function Experience() {
           <h1>BackEnd</h1>
           <div className="expinfox11">
             <div className="expbox3">
-              <h1>Database</h1>
+              <h1>Databases</h1>
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
-                    <SiMongodb />
                     <p>MongoDB</p>
                   </div>
                   <div className="expbox101">
-                    <BsFiletypeSql />
-                    <p>SQL</p>
+                    <p>MySQL</p>
+                  </div>
+                </div>
+                <div className="expbox10">
+                  <div className="expbox101">
+                    <p>PostgreSQl</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="expbox4">
-              <h1>FrameWork</h1>
+              <h1>FrameWorks</h1>
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
-                    <FaNodeJs />
                     <p>NodeJs</p>
                   </div>
                   <div className="expbox101">
-                    <SiExpress />
                     <p>ExpressJs</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
-                    <SiFlask />
                     <p>Flask</p>
                   </div>
                   <div className="expbox101">
-                    <FaLaravel />
                     <p>Laravel</p>
                   </div>
                 </div>

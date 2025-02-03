@@ -4,11 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
   scrollbar-width: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  /* background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\77.jpg"); */
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\image.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .landingpage {
   margin-top: 10rem;
@@ -16,7 +17,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   /* border: 2px solid rgb(0, 0, 0); */
 }
 
@@ -65,41 +66,16 @@
     transform: translateX(0);
   }
 }
-.selfimg {
-  width: 400px;
-  height: 400px;
-  border-radius: 50% 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0%;
-}
-.selfimg2 {
-  width: 400px;
-  height: 400px;
-  border-radius: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0%;
-  margin-right: -10rem;
-  box-shadow: rgba(194, 111, 111, 0.2) 0px 0px 20px;
-  border: 20px solid rgba(206, 101, 101, 0.8);
-}
-
-.selfimg2:hover {
-  box-shadow: rgba(246, 246, 246, 0.5) 0px 0px 20px;
-}
-
 .selfinfo {
   width: 700px;
-  height: 400px;
+  height: 600px;
+  margin-top: 4rem;
   border-radius: 12px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* border: 2px solid rgb(0, 0, 0); */
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
 }
 
 .selfinfo h1 {
@@ -115,6 +91,7 @@
 }
 
 .selfinfo .button1 {
+  margin-top: 5rem;
   width: 200px;
   height: 50px;
   border-radius: 12px;
@@ -135,6 +112,7 @@
 }
 
 .selfinfo .button2 {
+  margin-top: 5rem;
   width: 200px;
   height: 50px;
   border-radius: 12px;
@@ -168,4 +146,62 @@
 
 .social:hover {
   scale: 1.1;
+}
+
+.myinformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 9rem;
+}
+
+.myinformation h2 {
+  color: rgba(252, 252, 252, 0.5);
+  height: 30px;
+  overflow: hidden;
+  animation: typing 2s steps(14) infinite alternate;
+}
+
+.myinformation h1 {
+  margin-top: -15px;
+  color: white;
+  font-size: 60px;
+  animation: slide 0.8s ease-in;
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* animation: wave 10s infinite ease-in-out; */
+/* @keyframes wave {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+} */
+
+.myinformation h3 {
+  margin-top: -10px;
+  color: rgba(253, 253, 253, 0.8);
+  font-size: 30px;
 }
