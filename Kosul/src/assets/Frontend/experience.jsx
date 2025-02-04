@@ -18,7 +18,7 @@ import boot from "../img/Bootstrap.png";
 import tailwind from "../img/Tailwind.png";
 import mongo from "../img/MongoDB.png";
 import mysq from "../img/MySQL.png";
-import post from "../img/PostgresSQl.png";
+import post from "../img/PostgresSQL.png";
 import node from "../img/Node.js.png";
 import exp from "../img/Express.png";
 import flask from "../img/Flask.png";
