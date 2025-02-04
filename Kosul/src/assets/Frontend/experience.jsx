@@ -6,21 +6,23 @@ import "./experience.css";
 import characterimg from "../img/k12.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { FaCss3Alt } from "react-icons/fa";
-// import { IoLogoJavascript } from "react-icons/io5";
-// import { TiHtml5 } from "react-icons/ti";
-// import { FaPython } from "react-icons/fa";
-// import { FaReact } from "react-icons/fa";
-// import { RiNextjsFill } from "react-icons/ri";
-// import { FaBootstrap } from "react-icons/fa";
-// import { RiTailwindCssFill } from "react-icons/ri";
-// import { SiMongodb } from "react-icons/si";
-// import { BsFiletypeSql } from "react-icons/bs";
-// import { FaNodeJs } from "react-icons/fa";
-// import { SiFlask } from "react-icons/si";
-// import { SiExpress } from "react-icons/si";
-// import { FaLaravel } from "react-icons/fa";
-
+import html from "../img/HTML5.png";
+import css from "../img/CSS3.png";
+import js from "../img/JavaScript.png";
+import ts from "../img/TypeScript.png";
+import py from "../img/Python.png";
+import react from "../img/react.png";
+import next from "../img/Next.png";
+import vue from "../img/vue.png";
+import boot from "../img/Bootstrap.png";
+import tailwind from "../img/Tailwind.png";
+import mongo from "../img/MongoDB.png";
+import mysq from "../img/MySQL.png";
+import post from "../img/PostgresSQl.png";
+import node from "../img/Node.js.png";
+import exp from "../img/Express.png";
+import flask from "../img/Flask.png";
+import lara from "../img/Laravel.png";
 gsap.registerPlugin(ScrollTrigger);
 
 function Experience() {
@@ -250,25 +252,40 @@ function Experience() {
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
-                    <div className="eimg eimg1"></div>
+                    <div
+                      className="eimg eimg1"
+                      style={{ backgroundImage: `URL(${html})` }}
+                    ></div>
                     <p>HTML</p>
                   </div>
                   <div className="expbox101">
-                    <div className="eimg eimg2"></div>
+                    <div
+                      className="eimg eimg2"
+                      style={{ backgroundImage: `URL(${css})` }}
+                    ></div>
                     <p>CSS</p>
                   </div>
                   <div className="expbox101">
-                    <div className="eimg eimg3"></div>
+                    <div
+                      className="eimg eimg3"
+                      style={{ backgroundImage: `URL(${js})` }}
+                    ></div>
                     <p>JavaScript</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
-                    <div className="eimg eimg4"></div>
+                    <div
+                      className="eimg eimg4"
+                      style={{ backgroundImage: `URL(${ts})` }}
+                    ></div>
                     <p>TypeScript</p>
                   </div>
                   <div className="expbox101">
-                    <div className="eimg eimg5"></div>
+                    <div
+                      className="eimg eimg5"
+                      style={{ backgroundImage: `URL(${py})` }}
+                    ></div>
                     <p>Python</p>
                   </div>
                 </div>
@@ -279,25 +296,40 @@ function Experience() {
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
-                    <div className="eimg eimg6"></div>
+                    <div
+                      className="eimg eimg6"
+                      style={{ backgroundImage: `URL(${react})` }}
+                    ></div>
                     <p>ReactJS</p>
                   </div>
                   <div className="expbox101">
-                    <div className="eimg eimg7"></div>
+                    <div
+                      className="eimg eimg7"
+                      style={{ backgroundImage: `URL(${next})` }}
+                    ></div>
                     <p>Next.JS</p>
                   </div>
                   <div className="expbox101">
-                    <div className="eimg eimg8"></div>
+                    <div
+                      className="eimg eimg8"
+                      style={{ backgroundImage: `URL(${vue})` }}
+                    ></div>
                     <p>Vue.JS</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
-                    <div className="eimg eimg9"></div>
+                    <div
+                      className="eimg eimg9"
+                      style={{ backgroundImage: `URL(${boot})` }}
+                    ></div>
                     <p>Bootstrap</p>
                   </div>
                   <div className="expbox101">
-                    <div className="eimg eimg10"></div>
+                    <div
+                      className="eimg eimg10"
+                      style={{ backgroundImage: `URL(${tailwind})` }}
+                    ></div>
                     <p>Tailwind</p>
                   </div>
                 </div>
@@ -313,17 +345,26 @@ function Experience() {
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
-                    <div className="eimg eimg11"></div>
+                    <div
+                      className="eimg eimg11"
+                      style={{ backgroundImage: `URL(${mongo})` }}
+                    ></div>
                     <p>MongoDB</p>
                   </div>
                   <div className="expbox101">
-                    <div className="eimg eimg12"></div>
+                    <div
+                      className="eimg eimg12"
+                      style={{ backgroundImage: `URL(${mysq})` }}
+                    ></div>
                     <p>MySQL</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
-                    <div className="eimg eimg13"></div>
+                    <div
+                      className="eimg eimg13"
+                      style={{ backgroundImage: `URL(${post})` }}
+                    ></div>
                     <p>PostgreSQl</p>
                   </div>
                 </div>
@@ -334,21 +375,33 @@ function Experience() {
               <div className="expboxer">
                 <div className="expbox10">
                   <div className="expbox101">
-                    <div className="eimg eimg14"></div>
+                    <div
+                      className="eimg eimg14"
+                      style={{ backgroundImage: `URL(${node})` }}
+                    ></div>
                     <p>NodeJs</p>
                   </div>
                   <div className="expbox101">
-                    <div className="eimg eimg15"></div>
+                    <div
+                      className="eimg eimg15"
+                      style={{ backgroundImage: `URL(${exp})` }}
+                    ></div>
                     <p>ExpressJs</p>
                   </div>
                 </div>
                 <div className="expbox10">
                   <div className="expbox101">
-                    <div className="eimg eimg16"></div>
+                    <div
+                      className="eimg eimg16"
+                      style={{ backgroundImage: `URL(${flask})` }}
+                    ></div>
                     <p>Flask</p>
                   </div>
                   <div className="expbox101">
-                    <div className="eimg eimg17"></div>
+                    <div
+                      className="eimg eimg17"
+                      style={{ backgroundImage: `URL(${lara})` }}
+                    ></div>
                     <p>Laravel</p>
                   </div>
                 </div>

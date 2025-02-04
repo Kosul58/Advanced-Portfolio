@@ -1,9 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./projects.css";
-import img1 from "../img/ecomerce.png";
-import img2 from "../img/fitness.png";
-import img3 from "../img/jakarta.jpg";
+import ecom from "../img/ecomerce.png";
+import fit from "../img/fitness.png";
+import jak from "../img/jakarta.jpg";
+import nutri from "../img/nutritrack.png";
+import chess from "../img/chess.png";
+import tower from "../img/tower.png";
+import dice from "../img/dice.png";
+import home from "../img/18697.jpg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -210,15 +215,36 @@ function Projects() {
           </div>
           <div className="parentzoomout">
             <div className="parentzoom">
-              <div className="childz1"></div>
-              <div className="childz2"></div>
-              <div className="childz3"></div>
-              <div className="childz4"></div>
+              <div
+                className="childz1"
+                style={{ backgroundImage: `URL(${chess})` }}
+              ></div>
+              <div
+                className="childz2"
+                style={{ backgroundImage: `URL(${jak})` }}
+              ></div>
+              <div
+                className="childz3"
+                style={{ backgroundImage: `URL(${fit})` }}
+              ></div>
+              <div
+                className="childz4"
+                style={{ backgroundImage: `URL(${ecom})` }}
+              ></div>
               <div className="childz5">
-                <div className="mainprojectimg"></div>
+                <div
+                  className="mainprojectimg"
+                  style={{ backgroundImage: `URL(${nutri})` }}
+                ></div>
               </div>
-              <div className="childz6"></div>
-              <div className="childz7"></div>
+              <div
+                className="childz6"
+                style={{ backgroundImage: `URL(${home})` }}
+              ></div>
+              <div
+                className="childz7"
+                style={{ backgroundImage: `URL(${tower})` }}
+              ></div>
             </div>
           </div>
           <div className="ptrig1"></div>
@@ -233,10 +259,16 @@ function Projects() {
                 Built in NEXT.JS
               </p>
             </div>
-            <div className="kosulp101 project2 blocksl"></div>
+            <div
+              className="kosulp101 project2 blocksl"
+              style={{ backgroundImage: `URL(${ecom})` }}
+            ></div>
           </div>
           <div className="kosulp">
-            <div className="kosulp101 project3 blocksr"></div>
+            <div
+              className="kosulp101 project3 blocksr"
+              style={{ backgroundImage: `URL(${fit})` }}
+            ></div>
             <div className="kprojectdesc blocks">
               <p>
                 Fitness Website <br />
@@ -251,7 +283,10 @@ function Projects() {
                 Built in Vue.JS
               </p>
             </div>
-            <div className="kosulp101 project4 blocksu"></div>
+            <div
+              className="kosulp101 project4 blocksu"
+              style={{ backgroundImage: `URL(${jak})` }}
+            ></div>
           </div>
           <div className="kosulpgames">
             <div className="topdiv">
@@ -265,10 +300,16 @@ function Projects() {
                     Built using <br /> ReactJs
                   </p>
                 </div>
-                <div className="imgxp"></div>
+                <div
+                  className="imgxp"
+                  style={{ backgroundImage: `URL(${chess})` }}
+                ></div>
               </div>
               <div className="tower">
-                <div className="imgxp"></div>
+                <div
+                  className="imgxp"
+                  style={{ backgroundImage: `URL(${tower})` }}
+                ></div>
                 <div className="imgxpd">
                   <p>
                     Built using <br />
@@ -286,7 +327,10 @@ function Projects() {
                     and JavaScript
                   </p>
                 </div>
-                <div className="imgxp"></div>
+                <div
+                  className="imgxp"
+                  style={{ backgroundImage: `URL(${dice})` }}
+                ></div>
               </div>
             </div>
           </div>

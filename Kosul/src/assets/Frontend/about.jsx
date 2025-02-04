@@ -2,6 +2,7 @@ import React from "react";
 import "./about.css";
 import { useState, useEffect } from "react";
 import kosul22 from "../img/kosul22.jpg";
+import rb from "../img/rb.png";
 import { PiMedalDuotone } from "react-icons/pi";
 import { PiStudentFill } from "react-icons/pi";
 
@@ -27,7 +28,10 @@ const About = () => {
           About Me
         </h1>
         <div className="aboutx">
-          <div className={`aboutimgx1 ${!isSmallScreen ? "block" : ""}`}></div>
+          <div
+            className={`aboutimgx1 ${!isSmallScreen ? "block" : ""}`}
+            style={{ backgroundImage: `URL(${rb})` }}
+          ></div>
           <div className="aboutinfo">
             <div className={`aboutimg ${!isSmallScreen ? "block2" : "blocks"}`}>
               <img src={kosul22} alt="Kosul Gurung" className="aboutimg2"></img>

@@ -348,7 +348,7 @@
 .dice .imgxp {
   width: 70%;
   height: 90%;
-  background-image: url("assets\img\dice.png");
+  background-image: url("\assets\img\dice.png");
   background-size: cover;
   background-position: center;
   border-radius: 20px;

@@ -7,7 +7,7 @@
   scrollbar-width: 0;
   background-color: rgba(0, 0, 0, 0.5);
   /* background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\77.jpg"); */
-  background-image: url("assets\img\image.jpg");
+  /* background-image: url("/assets/img/image.jpg"); */
   background-size: cover;
   background-position: center;
 }
