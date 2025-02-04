@@ -107,77 +107,138 @@ function Projects() {
           scrub: 1,
         },
         ease: "ease",
-        translateX: "35px",
+        translateX: "40px",
+      });
+      gsap.to(".childz4", {
+        scrollTrigger: {
+          trigger: ".ptrig1",
+          start: "top 800px",
+          end: "top 600px",
+          // markers: true,
+          scrub: 1,
+        },
+        scale: 0.9,
+        ease: "ease",
+      });
+      gsap.to(".childz6", {
+        scrollTrigger: {
+          trigger: ".ptrig1",
+          start: "top 800px",
+          end: "top 600px",
+          // markers: true,
+          scrub: 1,
+        },
+        scale: 0.7,
+        ease: "ease",
+      });
+      gsap.to(".childz7", {
+        scrollTrigger: {
+          trigger: ".ptrig1",
+          start: "top 800px",
+          end: "top 600px",
+          // markers: true,
+          scrub: 1,
+        },
+        scale: 1.2,
+        ease: "ease",
+      });
+      gsap.to(".chess", {
+        scrollTrigger: {
+          trigger: ".tower",
+          start: "top 400px",
+          end: "top 300px",
+          // markers: true,
+          scrub: 1,
+        },
+        translateY: "110px",
+        ease: "ease",
+      });
+      gsap.to(".tower", {
+        scrollTrigger: {
+          trigger: ".dice",
+          start: "top 600px",
+          end: "top 400px",
+          // markers: true,
+          scrub: 1,
+        },
+        translateY: "110px",
+        ease: "ease",
+      });
+      gsap.to(".dice", {
+        scrollTrigger: {
+          trigger: ".contact",
+          start: "top 600px",
+          end: "top 400px",
+          // markers: true,
+          scrub: 1,
+        },
+        translateY: "110px",
+        ease: "ease",
       });
     });
 
     return () => ctx.revert();
   }, []);
   return (
-    <div className="projects">
-      <h2 className="blockl">Explore My Recent</h2>
-      <h1 className="blockrr">Projects</h1>
-      <div className="projecty">
-        <div className="mainprojectdesc"></div>
-        <div className="parentzoomout">
-          <div className="parentzoom">
-            <div className="childz1"></div>
-            <div className="childz2"></div>
-            <div className="childz3"></div>
-            <div className="childz4"></div>
-            <div className="childz5">
-              <div className="mainprojectimg"></div>
-            </div>
-            <div className="childz6"></div>
-            <div className="childz7"></div>
-          </div>
-        </div>
-        <div className="ptrig1"></div>
-        <div className="ptrig2"></div>
-        <div className="ptrig3"></div>
-      </div>
-
-      <div className="projectsx ">
-        <div className="aboutl">
-          <div className="project1 blockl">
-            <div className="projectimg">
-              <img src={img1} className="prjimgx" alt="Ecomerce"></img>
-            </div>
-            <h1>Project1</h1>
-            <div className="projectinfo">
-              <button>Github</button>
-              <button>Live Demo</button>
+    <>
+      <section className="projects">
+        <h2 className="blockl">Explore My Recent</h2>
+        <h1 className="blockrr">Projects</h1>
+        <div className="projecty">
+          <div className="mainprojectdesc"></div>
+          <div className="parentzoomout">
+            <div className="parentzoom">
+              <div className="childz1"></div>
+              <div className="childz2"></div>
+              <div className="childz3"></div>
+              <div className="childz4"></div>
+              <div className="childz5">
+                <div className="mainprojectimg"></div>
+              </div>
+              <div className="childz6"></div>
+              <div className="childz7"></div>
             </div>
           </div>
+          <div className="ptrig1"></div>
+          <div className="ptrig2"></div>
+          <div className="ptrig3"></div>
         </div>
-
-        <div className="aboutu">
-          <div className="project1 blocku">
-            <div className="projectimg">
-              <img src={img2} className="prjimgx" alt="Fitness"></img>
-            </div>
-            <h1>Project2</h1>
-            <div className="projectinfo">
-              <button>Github</button>
-              <button>Live Demo</button>
-            </div>
+        <div className="projectsx ">
+          <div className="kosulp">
+            <div className="kprojectdesc blocks"></div>
+            <div className="kosulp101 project2 blocksl"></div>
           </div>
-        </div>
-
-        <div className="aboutr">
-          <div className="project1 blockrr">
-            <div className="projectimg">
-              <img src={img3} className="prjimgx" alt="Jakarta"></img>
+          <div className="kosulp">
+            <div className="kosulp101 project3 blocksr"></div>
+            <div className="kprojectdesc blocks"></div>
+          </div>
+          <div className="kosulp">
+            <div className="kprojectdesc blocks"></div>
+            <div className="kosulp101 project4 blocksu"></div>
+          </div>
+          <div className="kosulpgames">
+            <div className="topdiv">
+              <h1 className="blocku">Java Script</h1>
+              <h2 className="blocku">Games</h2>
             </div>
-            <h1>Project3</h1>
-            <div className="projectinfo">
-              <button>Github</button>
-              <button>Live Demo</button>
+            <div className="middiv">
+              <div className="chess">
+                <div className="imgxpd"></div>
+                <div className="imgxp"></div>
+              </div>
+              <div className="tower">
+                <div className="imgxp"></div>
+                <div className="imgxpd"></div>
+              </div>
+              <div className="dice">
+                <div className="imgxpd"></div>
+                <div className="imgxp"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
 

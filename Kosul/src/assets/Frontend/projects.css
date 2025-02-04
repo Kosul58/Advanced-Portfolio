@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(77, 72, 72, 0.4);
+  background-color: rgba(15, 15, 15, 0.7);
 }
 
 .projects h2 {
@@ -46,13 +46,21 @@
   overflow: hidden;
 }
 
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
 .childz1 {
   position: absolute;
-  top: 150px;
-  left: 100px;
-  width: 400px;
-  height: 250px;
-  background-color: red;
+  top: 180px;
+  left: 180px;
+  width: 350px;
+  height: 225px;
   overflow: hidden;
   border-radius: 8px;
   background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\chess.png");
@@ -66,7 +74,6 @@
   left: 600px;
   width: 400px;
   height: 250px;
-  background-color: black;
   overflow: hidden;
   border-radius: 8px;
   background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\jakarta.jpg");
@@ -79,7 +86,6 @@
   right: 200px;
   width: 300px;
   height: 200px;
-  background-color: rgb(199, 213, 172);
   overflow: hidden;
   border-radius: 8px;
   background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\fitness.png");
@@ -92,7 +98,6 @@
   left: 250px;
   width: 300px;
   height: 200px;
-  background-color: rgb(166, 72, 72);
   overflow: hidden;
   border-radius: 8px;
   background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\ecomerce.png");
@@ -113,7 +118,6 @@
 .mainprojectimg {
   width: 60%;
   height: 70%;
-  background-color: aliceblue;
   border-radius: 4px;
   background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\nutritrack.png");
   background-size: cover;
@@ -140,7 +144,6 @@
   left: 600px;
   width: 300px;
   height: 300px;
-  background-color: rgb(151, 140, 43);
   overflow: hidden;
   border-radius: 8px;
   background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\image.jpg");
@@ -153,23 +156,11 @@
   right: 265px;
   width: 250px;
   height: 150px;
-  background-color: rgb(147, 66, 159);
   overflow: hidden;
   border-radius: 8px;
   background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\tower.png");
   background-size: cover;
   background-position: center;
-}
-
-.projectsx {
-  border: 2px solid whitesmoke;
-  width: 90%;
-  height: 500svh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10rem;
 }
 
 .ptrig1 {
@@ -195,72 +186,159 @@
   z-index: 10;
 }
 
-.aboutl,
-.aboutu,
-.aboutr {
-  width: 60svw;
-  height: 85svh;
-}
-
-.project1 {
-  margin-top: -3rem;
+.projectsx {
   width: 100%;
-  height: 100%;
-  border-radius: 40px;
+  height: 500svh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.kosulp {
+  width: 100%;
+  height: 70svh;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.kosulp101 {
+  width: 66%;
+  height: 70svh;
+  border-radius: 14px;
+}
+
+.kprojectdesc {
+  width: 20%;
+  height: 90%;
+  background-color: rgba(212, 43, 43, 0.4);
+  border-radius: 12px;
+}
+
+.project2 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\ecomerce.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project3 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\fitness.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.project4 {
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\jakarta.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.kosulpgames {
+  width: 100%;
+  height: 250svh;
+}
+.topdiv {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: start;
   justify-content: space-around;
   flex-direction: column;
-  background-color: rgba(215, 116, 116, 0.8);
-  box-shadow: rgba(78, 71, 71, 0.4) 0px 0px 10px;
 }
-.projectimg {
-  margin-top: 2rem;
-  width: 90%;
-  height: 70%;
-  border-radius: 20px;
+.topdiv h1 {
+  margin-top: 1rem;
+  width: 600px;
+  height: 100px;
+  text-align: center;
+  font-size: 80px;
 }
-
-.project1 h1 {
-  margin-top: 2rem;
+.topdiv h2 {
+  margin-top: 1rem;
   font-size: 40px;
-  font-weight: 600;
-  color: rgb(0, 0, 0);
-  /* border: 2px solid rgb(0, 0, 0); */
+  height: 80px;
+  width: 300px;
+  text-align: center;
 }
 
-.projectinfo {
-  width: 90%;
-  height: 10%;
+.middiv {
+  width: 100%;
+  height: 220svh;
+}
+
+.chess,
+.tower,
+.dice {
+  width: 100%;
+  height: 35%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
-
-.projectinfo button {
-  margin-top: -2rem;
-  width: 150px;
-  height: 50px;
-  border-radius: 12px;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px;
-  border: none;
+.tower {
+  margin-top: 10rem;
+}
+.dice {
+  margin-top: 10rem;
 }
 
-.projectinfo button:hover {
-  background-color: rgb(246, 246, 246);
-  color: rgb(0, 0, 0);
-  box-shadow: rgba(78, 71, 71, 0.5) 0px 0px 8px;
-  scale: 1.2;
-}
-
-.prjimgx {
-  width: 100%;
+.chess .imgxp {
+  width: 70%;
   height: 100%;
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\chess.png");
+  background-size: cover;
+  background-position: center;
   border-radius: 20px;
+  margin-right: 1rem;
+}
+
+.chess .imgxpd {
+  width: 20%;
+  height: 40%;
+  background-color: antiquewhite;
+  margin-left: 7rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(242, 238, 238, 0.5);
+}
+
+.tower .imgxp {
+  width: 70%;
+  height: 90%;
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\tower.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin-left: 1rem;
+}
+
+.tower .imgxpd {
+  width: 20%;
+  height: 40%;
+  background-color: antiquewhite;
+  margin-right: 7rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(242, 238, 238, 0.5);
+}
+.dice .imgxp {
+  width: 70%;
+  height: 90%;
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\dice.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin-right: 1rem;
+}
+
+.dice .imgxpd {
+  width: 20%;
+  height: 40%;
+  background-color: antiquewhite;
+  margin-left: 7rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(242, 238, 238, 0.5);
 }

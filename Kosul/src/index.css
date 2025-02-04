@@ -12,11 +12,11 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 ::-webkit-scrollbar {
   width: 8px;
+  background-color: rgba(1, 1, 1, 0.8);
 }
 
 ::-webkit-scrollbar-thumb {

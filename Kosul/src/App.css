@@ -82,3 +82,69 @@
   animation-timeline: view();
   animation-range: entry 0 cover 35%;
 }
+
+@keyframes scaler {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  top {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes scalel {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleu {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scalerr {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.blocks {
+  animation: scaler linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 35%;
+}
+
+.blocksl {
+  animation: scalel linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 35%;
+}
+.blocksu {
+  animation: scaleu linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 35%;
+}
+.blocksr {
+  animation: scalerr linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 35%;
+}
