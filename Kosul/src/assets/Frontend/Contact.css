@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: rgba(55, 71, 71, 0.7);
 }
 
 .contact h2 {

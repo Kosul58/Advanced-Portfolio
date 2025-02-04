@@ -4,10 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* border: 2px solid rgb(0, 0, 0); */
-  /* background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\kosull.jpg"); */
-  background-size: cover;
-  background-position: right;
+  background-color: rgba(25, 20, 59, 0.7);
 }
 
 .about h2 {

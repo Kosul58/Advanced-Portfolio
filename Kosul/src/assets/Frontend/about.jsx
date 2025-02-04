@@ -9,8 +9,8 @@ const About = () => {
     <>
       {" "}
       <div className="about">
-        <h2>Get to know more</h2>
-        <h1>About Me</h1>
+        <h2 className="blockl">Get to know more</h2>
+        <h1 className="blockrr">About Me</h1>
         <div className="aboutx">
           <div className="aboutimgx1 block"></div>
           <div className="aboutinfo">

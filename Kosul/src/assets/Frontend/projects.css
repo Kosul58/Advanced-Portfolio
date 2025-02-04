@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(77, 72, 72, 0.4);
 }
 
 .projects h2 {
@@ -48,13 +49,13 @@
 .childz1 {
   position: absolute;
   top: 150px;
-  left: 200px;
-  width: 300px;
+  left: 100px;
+  width: 400px;
   height: 250px;
   background-color: red;
   overflow: hidden;
   border-radius: 8px;
-  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\image.jpg");
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\chess.png");
   background-size: cover;
   background-position: center;
 }
@@ -68,7 +69,7 @@
   background-color: black;
   overflow: hidden;
   border-radius: 8px;
-  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\image.jpg");
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\jakarta.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -81,7 +82,7 @@
   background-color: rgb(199, 213, 172);
   overflow: hidden;
   border-radius: 8px;
-  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\image.jpg");
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\fitness.png");
   background-size: cover;
   background-position: center;
 }
@@ -94,7 +95,7 @@
   background-color: rgb(166, 72, 72);
   overflow: hidden;
   border-radius: 8px;
-  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\image.jpg");
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\ecomerce.png");
   background-size: cover;
   background-position: center;
 }
@@ -114,7 +115,7 @@
   height: 70%;
   background-color: aliceblue;
   border-radius: 4px;
-  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\image.jpg");
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\nutritrack.png");
   background-size: cover;
   background-position: center;
 }
@@ -149,13 +150,13 @@
 .childz7 {
   position: absolute;
   top: 550px;
-  right: 300px;
-  width: 200px;
+  right: 265px;
+  width: 250px;
   height: 150px;
   background-color: rgb(147, 66, 159);
   overflow: hidden;
   border-radius: 8px;
-  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\image.jpg");
+  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\tower.png");
   background-size: cover;
   background-position: center;
 }

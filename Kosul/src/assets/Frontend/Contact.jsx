@@ -34,8 +34,8 @@ function Contact() {
   };
   return (
     <div className="contact">
-      <h2>Get In Touch</h2>
-      <h1>Contact Me</h1>
+      <h2 className="blockl">Get In Touch</h2>
+      <h1 className="blockrr">Contact Me</h1>
       <div className="contacter">
         <div className="contactx">
           <div className="contactimg"></div>

@@ -236,8 +236,8 @@ function Experience() {
 
   return (
     <div className="experiences">
-      <h2>Explore My</h2>
-      <h1>Experience</h1>
+      <h2 className="blockl">Explore My</h2>
+      <h1 className="blockrr">Experience</h1>
       <div className="charactercontainer" ref={charref}>
         <img src={characterimg} className="characterimg" />
       </div>
