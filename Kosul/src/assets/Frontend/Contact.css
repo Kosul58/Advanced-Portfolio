@@ -162,7 +162,7 @@
 .contactimg {
   width: 400px;
   height: 500px;
-  background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\dev.png");
+  background-image: url("assets\img\dev.png");
   background-size: cover;
   background-position: center;
 }
