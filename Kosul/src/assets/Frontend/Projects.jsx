@@ -70,6 +70,7 @@ function Projects() {
           toggleActions: "play reverse play reverse",
         },
         translateY: "-100px",
+        translateX: "100px",
         scale: 1.2,
         ease: "ease",
       });

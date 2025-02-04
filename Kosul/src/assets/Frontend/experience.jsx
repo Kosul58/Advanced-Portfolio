@@ -63,7 +63,7 @@ function Experience() {
           // markers: true,
           scrub: 1,
         },
-        translateX: "300px",
+        translateX: "70%",
         ease: "ease",
       });
 
@@ -76,18 +76,6 @@ function Experience() {
           // markers: true,
         },
         className: "displaynone",
-      });
-
-      gsap.to(".charactercontainer", {
-        scrollTrigger: {
-          trigger: ".trig2",
-          start: "top 800px",
-          end: "top 800px",
-          scrub: 1,
-          // markers: true,
-        },
-        left: "300px",
-        className: "charactercontainer leftshift",
       });
 
       gsap.to(".expbox2", {
@@ -124,7 +112,8 @@ function Experience() {
           scrub: 1,
           onEnterBack: () => {
             gsap.to(".charactercontainer", {
-              className: "charactercontainer leftshift",
+              className: "charactercontainer",
+              translateX: "70%",
             });
           },
         },
@@ -140,12 +129,12 @@ function Experience() {
           toggleActions: "play reverse play reverse",
           onLeaveBack: () => {
             gsap.to(".charactercontainer", {
-              x: "-325px",
+              x: "-70%",
             });
           },
           onEnter: () => {
             gsap.to(".charactercontainer", {
-              x: "-325px",
+              x: "-70%",
             });
           },
         },
@@ -163,7 +152,7 @@ function Experience() {
         },
         ease: "ease",
         scale: 1.5,
-        translateX: "60%",
+        translateX: "70%",
         opacity: 1,
       });
 
@@ -176,12 +165,12 @@ function Experience() {
           scrub: 1,
           onEnterBack: () => {
             gsap.to(".charactercontainer", {
-              x: "325px",
+              x: "70%",
             });
           },
           onEnter: () => {
             gsap.to(".charactercontainer", {
-              x: "-325px",
+              x: "-70%",
             });
           },
         },
@@ -221,23 +210,6 @@ function Experience() {
             document.querySelector(".expbox4").style.display = "none";
           },
         },
-      });
-
-      gsap.to(".charactercontainer", {
-        scrollTrigger: {
-          trigger: ".trigx4",
-          start: "top 300px",
-          end: "top 200px",
-          // markers: true,
-          scrub: 1,
-          toggleActions: "play reverse play none",
-          onEnterBack: () => {
-            gsap.to(".charactercontainer", {
-              className: "charactercontainer leftshift",
-            });
-          },
-        },
-        className: "charactercontainer leftside",
       });
     });
 
