@@ -115,8 +115,8 @@ function Projects() {
   }, []);
   return (
     <div className="projects">
-      <h2>Explore My Recent</h2>
-      <h1>Projects</h1>
+      <h2 className="blockl">Explore My Recent</h2>
+      <h1 className="blockrr">Projects</h1>
       <div className="projecty">
         <div className="mainprojectdesc"></div>
         <div className="parentzoomout">

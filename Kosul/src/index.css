@@ -10,3 +10,7 @@ html {
 .displaynone {
   display: none !important;
 }
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+}
