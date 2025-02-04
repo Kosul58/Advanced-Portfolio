@@ -42,8 +42,8 @@ function Projects() {
           scrub: 1,
           toggleActions: "play reverse play reverse",
         },
-        translateX: "-100px",
-        translateY: "-100px",
+        translateX: "-150px",
+        translateY: "-150px",
         scale: 1.5,
         ease: "ease",
       });
@@ -106,7 +106,7 @@ function Projects() {
           toggleActions: "play reverse play reverse",
         },
         ease: "ease",
-        translateX: "400px",
+        translateX: "700px",
       });
       gsap.to(".childz5", {
         scrollTrigger: {
@@ -123,11 +123,13 @@ function Projects() {
         scrollTrigger: {
           trigger: ".ptrig1",
           start: "top 800px",
-          end: "top 600px",
+          end: "top 200px",
           // markers: true,
           scrub: 1,
         },
         scale: 0.9,
+        translateX: "-150px",
+        translateY: "150px",
         ease: "ease",
       });
       gsap.to(".childz6", {

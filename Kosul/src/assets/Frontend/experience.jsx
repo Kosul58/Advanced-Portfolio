@@ -163,7 +163,7 @@ function Experience() {
         },
         ease: "ease",
         scale: 1.5,
-        translateX: "250px",
+        translateX: "60%",
         opacity: 1,
       });
 

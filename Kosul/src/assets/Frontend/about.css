@@ -43,15 +43,6 @@
   .aboutimgx1 {
     display: none;
   }
-  .about {
-    height: 160vh !important;
-  }
-}
-
-@media (max-width: 1300px) {
-  .about {
-    height: 120vh;
-  }
 }
 
 @media (max-width: 1000px) {

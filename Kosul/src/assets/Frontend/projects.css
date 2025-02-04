@@ -128,7 +128,7 @@
   position: sticky;
   opacity: 1;
   z-index: 5;
-  top: 150px;
+  top: 20%;
   left: 75%;
   width: 300px;
   height: 500px;
@@ -343,7 +343,7 @@
   box-shadow: 0 0 8px rgba(242, 238, 238, 0.5);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .projectsx {
     display: none;
   }
@@ -352,5 +352,40 @@
   }
   .projects {
     height: 200svh;
+  }
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .mainprojectdesc {
+    top: 28% !important;
+  }
+  .childz5 {
+    width: 25%;
+    height: 20%;
+  }
+  .childz1 {
+    left: 20%;
+    top: 25%;
+  }
+  .childz2 {
+    top: 15%;
+    left: 40%;
+  }
+
+  .childz3 {
+    top: 25%;
+    right: 20%;
+  }
+  .childz4 {
+    top: 55%;
+    left: 25%;
+  }
+  .childz6 {
+    top: 60%;
+    left: 50%;
+  }
+  .childz7 {
+    top: 50%;
+    right: 20%;
   }
 }

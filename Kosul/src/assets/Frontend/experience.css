@@ -335,7 +335,7 @@
   background-position: center;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .charactercontainer {
     display: none;
   }
@@ -347,5 +347,17 @@
   }
   .experiences {
     height: 200svh;
+  }
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .expinfox2 {
+    top: 35%;
+  }
+  .charactercontainer {
+    top: 35%;
+  }
+  .expinfox1 {
+    top: 35%;
   }
 }
