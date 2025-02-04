@@ -3,7 +3,7 @@ import "./Contact.css";
 import { MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { useRef, useState, useEffect } from "react";
-
+import dev from "../img/dev.png";
 function Contact() {
   const emailref = useRef(null);
   const nameref = useRef(null);
@@ -52,7 +52,10 @@ function Contact() {
       </h1>
       <div className="contacter">
         <div className="contactx">
-          <div className="contactimg"></div>
+          <div
+            className="contactimg"
+            style={{ backgroundImage: `URL(${dev})` }}
+          ></div>
           <div className="emailinfo">
             <MdEmail size={30} />: kosulgrg@gmail.com
           </div>
