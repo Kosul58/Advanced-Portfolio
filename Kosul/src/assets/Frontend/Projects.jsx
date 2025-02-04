@@ -202,7 +202,12 @@ function Projects() {
           Projects
         </h1>
         <div className="projecty">
-          <div className="mainprojectdesc"></div>
+          <div className="mainprojectdesc">
+            <p>
+              Built using <br /> ReactJs <br /> For Web application <br /> and{" "}
+              <br /> Pytorch for <br /> recomendation <br /> engine
+            </p>
+          </div>
           <div className="parentzoomout">
             <div className="parentzoom">
               <div className="childz1"></div>
@@ -222,15 +227,30 @@ function Projects() {
         </div>
         <div className="projectsx ">
           <div className="kosulp">
-            <div className="kprojectdesc blocks"></div>
+            <div className="kprojectdesc blocks">
+              <p>
+                Ecommerce Website <br />
+                Built in NEXT.JS
+              </p>
+            </div>
             <div className="kosulp101 project2 blocksl"></div>
           </div>
           <div className="kosulp">
             <div className="kosulp101 project3 blocksr"></div>
-            <div className="kprojectdesc blocks"></div>
+            <div className="kprojectdesc blocks">
+              <p>
+                Fitness Website <br />
+                Built in React.JS
+              </p>
+            </div>
           </div>
           <div className="kosulp">
-            <div className="kprojectdesc blocks"></div>
+            <div className="kprojectdesc blocks">
+              <p>
+                College Website <br />
+                Built in Vue.JS
+              </p>
+            </div>
             <div className="kosulp101 project4 blocksu"></div>
           </div>
           <div className="kosulpgames">
@@ -240,15 +260,32 @@ function Projects() {
             </div>
             <div className="middiv">
               <div className="chess">
-                <div className="imgxpd"></div>
+                <div className="imgxpd">
+                  <p>
+                    Built using <br /> ReactJs
+                  </p>
+                </div>
                 <div className="imgxp"></div>
               </div>
               <div className="tower">
                 <div className="imgxp"></div>
-                <div className="imgxpd"></div>
+                <div className="imgxpd">
+                  <p>
+                    Built using <br />
+                    HTML, CSS <br />
+                    and JavaScript
+                  </p>
+                </div>
               </div>
               <div className="dice">
-                <div className="imgxpd"></div>
+                <div className="imgxpd">
+                  {" "}
+                  <p>
+                    Built using <br />
+                    HTML, CSS <br />
+                    and JavaScript
+                  </p>
+                </div>
                 <div className="imgxp"></div>
               </div>
             </div>
