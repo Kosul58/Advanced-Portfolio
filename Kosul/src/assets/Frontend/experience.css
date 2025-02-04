@@ -55,7 +55,7 @@
 
 .charactercontainer {
   position: sticky;
-  top: 200px;
+  top: 15rem;
   left: 30%;
 }
 
@@ -333,4 +333,19 @@
   background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\Laravel.png");
   background-size: cover;
   background-position: center;
+}
+
+@media (max-width: 1300px) {
+  .charactercontainer {
+    display: none;
+  }
+  .triggers {
+    display: none;
+  }
+  .expinfo {
+    display: none;
+  }
+  .experiences {
+    height: 200svh;
+  }
 }

@@ -36,7 +36,7 @@ function Home({ scrollToAbout }) {
                 />
               </h3>
             </div>
-            <div>
+            <div className="buttoncontrol">
               <button className="button1" onClick={downloadFile}>
                 Download CV
               </button>

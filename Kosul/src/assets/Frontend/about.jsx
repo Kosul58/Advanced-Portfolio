@@ -1,24 +1,41 @@
 import React from "react";
 import "./about.css";
+import { useState, useEffect } from "react";
 import kosul22 from "../img/kosul22.jpg";
 import { PiMedalDuotone } from "react-icons/pi";
 import { PiStudentFill } from "react-icons/pi";
 
 const About = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 1000);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <>
       {" "}
       <div className="about">
-        <h2 className="blockl">Get to know more</h2>
-        <h1 className="blockrr">About Me</h1>
+        <h2 className={`${!isSmallScreen ? "blockl" : "blocksl"}`}>
+          Get to know more
+        </h2>
+        <h1 className={`${!isSmallScreen ? "blockrr" : "blocksl"}`}>
+          About Me
+        </h1>
         <div className="aboutx">
-          <div className="aboutimgx1 block"></div>
+          <div className={`aboutimgx1 ${!isSmallScreen ? "block" : ""}`}></div>
           <div className="aboutinfo">
-            <div className="aboutimg block2">
+            <div className={`aboutimg ${!isSmallScreen ? "block2" : "blocks"}`}>
               <img src={kosul22} alt="Kosul Gurung" className="aboutimg2"></img>
             </div>
             <div className="aboutinfox">
-              <div className="experience block2">
+              <div
+                className={`experience ${!isSmallScreen ? "block2" : "blocks"}`}
+              >
                 <h4>
                   <PiMedalDuotone size={30} color="white" />
                 </h4>
@@ -27,7 +44,9 @@ const About = () => {
                   2+ Years <br></br>Full Stack Developer
                 </p>
               </div>
-              <div className="education block2">
+              <div
+                className={`education ${!isSmallScreen ? "block2" : "blocks"}`}
+              >
                 <h4>
                   <PiStudentFill size={30} color="white" />
                 </h4>

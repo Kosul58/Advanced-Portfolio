@@ -2,13 +2,23 @@ import React from "react";
 import "./Contact.css";
 import { MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 function Contact() {
   const emailref = useRef(null);
   const nameref = useRef(null);
   const numberref = useRef(null);
   const messageref = useRef(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 1000);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const submitemail = async () => {
     const email = emailref.current.value;
     console.log(email);
@@ -34,8 +44,12 @@ function Contact() {
   };
   return (
     <div className="contact">
-      <h2 className="blockl">Get In Touch</h2>
-      <h1 className="blockrr">Contact Me</h1>
+      <h2 className={`${!isSmallScreen ? "blockl" : "blocksl"}`}>
+        Get In Touch
+      </h2>
+      <h1 className={`${!isSmallScreen ? "blockrr" : "blocksl"}`}>
+        Contact Me
+      </h1>
       <div className="contacter">
         <div className="contactx">
           <div className="contactimg"></div>

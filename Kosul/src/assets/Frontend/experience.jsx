@@ -27,6 +27,16 @@ function Experience() {
   const charref = useRef(null);
   const boxref1 = useRef(null);
   const boxref2 = useRef(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 1000);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -236,8 +246,10 @@ function Experience() {
 
   return (
     <div className="experiences">
-      <h2 className="blockl">Explore My</h2>
-      <h1 className="blockrr">Experience</h1>
+      <h2 className={`${!isSmallScreen ? "blockl" : "blocksl"}`}>Explore My</h2>
+      <h1 className={`${!isSmallScreen ? "blockrr" : "blocksl"}`}>
+        Experience
+      </h1>
       <div className="charactercontainer" ref={charref}>
         <img src={characterimg} className="characterimg" />
       </div>

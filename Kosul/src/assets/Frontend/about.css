@@ -40,23 +40,44 @@
     flex-direction: column;
     gap: 20px;
   }
-  .experience {
-    width: 450px;
-    height: 300px;
+  .aboutimgx1 {
+    display: none;
+  }
+  .about {
+    height: 160vh !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .about {
+    height: 120vh;
   }
 }
 
 @media (max-width: 1000px) {
   .experience,
   .education {
-    width: 450px !important;
-    height: 400px !important;
+    min-width: 350px !important;
+    max-height: 200px !important;
   }
 
   .aboutinfox2 {
     margin-top: 20px !important;
     width: fit-content !important;
     font-size: 20px !important;
+  }
+
+  .experience h3,
+  .education h3 {
+    font-size: small;
+  }
+  .experience h2,
+  .education h2 {
+    font-size: smaller;
+  }
+  .experience p,
+  .education p {
+    font-size: smaller;
   }
 }
 
@@ -94,6 +115,7 @@
 }
 .aboutinfox div {
   width: 42%;
+  min-width: 250px;
   height: 60%;
   display: flex;
   align-items: center;

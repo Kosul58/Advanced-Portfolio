@@ -9,6 +9,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 1000);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   useEffect(() => {
     let ctx = gsap.context(() => {
       gsap.to(".parentzoom", {
@@ -182,8 +192,12 @@ function Projects() {
   return (
     <>
       <section className="projects">
-        <h2 className="blockl">Explore My Recent</h2>
-        <h1 className="blockrr">Projects</h1>
+        <h2 className={`${!isSmallScreen ? "blockl" : "blocksl"}`}>
+          Explore My Recent
+        </h2>
+        <h1 className={`${!isSmallScreen ? "blockrr" : "blocksl"}`}>
+          Projects
+        </h1>
         <div className="projecty">
           <div className="mainprojectdesc"></div>
           <div className="parentzoomout">

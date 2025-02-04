@@ -94,8 +94,8 @@
 }
 
 .submityouremail input {
-  width: 400px;
-  height: 60px;
+  width: 80%;
+  height: 10%;
   border-radius: 10px;
   border: none;
   padding-left: 20px;
@@ -118,7 +118,7 @@
 }
 
 .submityouremail button {
-  width: 200px;
+  width: 50%;
   height: 50px;
   border-radius: 12px;
   background-color: rgb(0, 0, 0);
@@ -141,8 +141,21 @@
 }
 
 @media (max-width: 1100px) {
+  .contactimg {
+    display: none;
+  }
   .contacter {
     flex-direction: column;
+  }
+  .contact {
+    height: 150vh;
+  }
+  .contactx {
+    height: 20%;
+  }
+  .contacty {
+    height: 70%;
+    width: 90%;
   }
 }
 

@@ -342,3 +342,15 @@
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(242, 238, 238, 0.5);
 }
+
+@media (max-width: 1300px) {
+  .projectsx {
+    display: none;
+  }
+  .projecty {
+    display: none;
+  }
+  .projects {
+    height: 200svh;
+  }
+}
