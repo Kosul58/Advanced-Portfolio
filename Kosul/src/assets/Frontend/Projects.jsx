@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "./Projects.css";
+import "./projects.css";
 import img1 from "../img/ecomerce.png";
 import img2 from "../img/fitness.png";
 import img3 from "../img/jakarta.jpg";
