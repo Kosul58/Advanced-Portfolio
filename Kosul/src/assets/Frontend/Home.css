@@ -22,10 +22,16 @@
   /* border: 2px solid rgb(0, 0, 0); */
 }
 
-@media (max-width: 1000px) {
+@media (max-height: 700px) {
   .home {
-    height: 170dvh;
+    height: 160dvh;
   }
+  .buttoncontrol {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1000px) {
   .landingpage {
     flex-direction: column;
   }
@@ -226,4 +232,22 @@
   margin-top: -10px;
   color: rgba(253, 253, 253, 0.8);
   font-size: 30px;
+}
+
+@media (min-height: 800px) {
+  .selfinfo {
+    margin-top: 15rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .buttoncontrol {
+    margin-left: 12rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .buttoncontrol {
+    margin-left: 0;
+  }
 }

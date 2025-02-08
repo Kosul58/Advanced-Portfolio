@@ -248,8 +248,8 @@
 }
 
 .eimgmob {
-  width: 3rem;
-  height: 3rem;
+  width: 8svb;
+  height: 8svh;
 }
 
 .eimg1 {
@@ -340,7 +340,7 @@
   background-position: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .charactercontainer {
     display: none;
   }
@@ -351,7 +351,7 @@
     display: none;
   }
   .experiences {
-    height: 300svh;
+    height: 300%;
   }
   .mobileexp {
     display: flex !important;
@@ -376,14 +376,14 @@
 .mobileexp {
   display: none;
   width: 100%;
-  height: 1700px;
+  height: 70%;
   flex-direction: column;
-  border: 2px solid white;
 }
 
 .frontendbasics {
+  margin-top: 10rem;
   width: 100%;
-  height: 400px;
+  height: 40rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -392,6 +392,7 @@
 
 .frontendbasics h2 {
   margin-top: 1rem;
+  font-size: 30px;
 }
 
 .frontendbasics10 {
@@ -403,24 +404,21 @@
 }
 
 .frontendbasics101 {
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.mobileproj {
-  display: none;
-  width: 100%;
-  height: 1700px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  border: 2px solid white;
+.frontendbasics101 p {
+  font-size: 1.5rem;
+  color: white;
 }
 
-.progress-bar {
-  width: 10px;
-  height: 900px;
-  background-color: wheat;
+.mobileproj {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
 }

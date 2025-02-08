@@ -9,6 +9,12 @@ import chess from "../img/chess.png";
 import tower from "../img/tower.png";
 import dice from "../img/dice.png";
 import home from "../img/18697.jpg";
+import js from "../img/JavaScript.png";
+import react from "../img/react.png";
+import next from "../img/Next.png";
+import vue from "../img/vue.png";
+import lchar from "../img/Lchat.png";
+import rchar from "../img/Rchat.png";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -208,7 +214,175 @@ function Projects() {
           Projects
         </h1>
         <div className="mobileproj">
-          <div className="progress-bar"></div>
+          <section className="timeline-section">
+            <div className="timeline-items">
+              <div className="timeline-item">
+                <div
+                  className="timeline-title"
+                  style={{ backgroundImage: `URL(${js})` }}
+                ></div>
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">Tower Game</div>
+                <div className="timeline-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">Dice Game</div>
+                <div className="timeline-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div className="timeline-item" style={{ opacity: 0 }}>
+                <div
+                  className="timeline-title"
+                  style={{ backgroundImage: `URL(${js})` }}
+                ></div>
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2017</div>
+              </div>
+              <div className="timeline-item" style={{ opacity: 0 }}>
+                <div
+                  className="timeline-title"
+                  style={{ backgroundImage: `URL(${js})` }}
+                ></div>
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2017</div>
+              </div>
+              <div className="timeline-item">
+                <div
+                  className="timeline-title"
+                  style={{ backgroundImage: `URL(${react})` }}
+                ></div>
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">Chess Game</div>
+                <div className="timeline-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">Portfolio Website</div>
+                <div className="timeline-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">Nutritrack & Rec </div>
+                <div className="timeline-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+
+              <div className="timeline-item" style={{ opacity: 0 }}>
+                <div
+                  className="timeline-title"
+                  style={{ backgroundImage: `URL(${js})` }}
+                ></div>
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2017</div>
+              </div>
+              <div className="timeline-item" style={{ opacity: 0 }}>
+                <div
+                  className="timeline-title"
+                  style={{ backgroundImage: `URL(${js})` }}
+                ></div>
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2017</div>
+              </div>
+              <div className="timeline-item">
+                <div
+                  className="timeline-title"
+                  style={{ backgroundImage: `URL(${next})` }}
+                ></div>
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">Fitness Web App</div>
+                <div className="timeline-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">College Website</div>
+                <div className="timeline-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+
+              <div className="timeline-item" style={{ opacity: 0 }}>
+                <div
+                  className="timeline-title"
+                  style={{ backgroundImage: `URL(${js})` }}
+                ></div>
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2017</div>
+              </div>
+              <div className="timeline-item" style={{ opacity: 0 }}>
+                <div
+                  className="timeline-title"
+                  style={{ backgroundImage: `URL(${js})` }}
+                ></div>
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2017</div>
+              </div>
+              <div className="timeline-item">
+                <div
+                  className="timeline-title"
+                  style={{ backgroundImage: `URL(${vue})` }}
+                ></div>
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">Ecommerce Website</div>
+                <div className="timeline-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">Task Manager</div>
+                <div className="timeline-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
         <div className="projecty">
           <div className="mainprojectdesc">
