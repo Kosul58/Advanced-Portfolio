@@ -9,6 +9,7 @@ import chess from "../img/chess.png";
 import tower from "../img/tower.png";
 import dice from "../img/dice.png";
 import home from "../img/18697.jpg";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -206,6 +207,9 @@ function Projects() {
         <h1 className={`${!isSmallScreen ? "blockrr" : "blocksl"}`}>
           Projects
         </h1>
+        <div className="mobileproj">
+          <div className="progress-bar"></div>
+        </div>
         <div className="projecty">
           <div className="mainprojectdesc">
             <p>

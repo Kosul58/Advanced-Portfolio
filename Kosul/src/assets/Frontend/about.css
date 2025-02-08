@@ -48,8 +48,11 @@
 @media (max-width: 1000px) {
   .experience,
   .education {
-    min-width: 350px !important;
+    min-width: 300px !important;
     max-height: 200px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .aboutinfox2 {
@@ -61,14 +64,17 @@
   .experience h3,
   .education h3 {
     font-size: small;
-  }
-  .experience h2,
-  .education h2 {
-    font-size: smaller;
+    margin-top: 0.1rem !important;
   }
   .experience p,
   .education p {
     font-size: smaller;
+    margin-top: 0.1rem !important;
+  }
+
+  .experience h4,
+  .education h4 {
+    margin-top: 0.1rem !important;
   }
 }
 

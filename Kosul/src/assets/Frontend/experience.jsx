@@ -224,6 +224,158 @@ function Experience() {
       <h1 className={`${!isSmallScreen ? "blockrr" : "blocksl"}`}>
         Experience
       </h1>
+
+      <div className="mobileexp">
+        {/* Frontend basics */}
+        <div className="frontendbasics">
+          <h2 className="blocksu">Frontend Basics</h2>
+          <div className="frontendbasics10">
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg1"
+                style={{ backgroundImage: `URL(${html})` }}
+              ></div>
+              <p>HTML</p>
+            </div>
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg2"
+                style={{ backgroundImage: `URL(${css})` }}
+              ></div>
+              <p>CSS</p>
+            </div>
+          </div>
+          <div className="frontendbasics10">
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg1"
+                style={{ backgroundImage: `URL(${js})` }}
+              ></div>
+              <p>Java Script</p>
+            </div>
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg2"
+                style={{ backgroundImage: `URL(${ts})` }}
+              ></div>
+              <p>Type Script</p>
+            </div>
+          </div>
+          <div className="frontendbasics101 blocks">
+            <div
+              className="eimgmob eimg4"
+              style={{ backgroundImage: `URL(${py})` }}
+            ></div>
+            <p>Python</p>
+          </div>
+        </div>
+        {/* Frontend Frameworks */}
+        <div className="frontendbasics">
+          <h2 className="blocksu">Frontend Frameworks</h2>
+          <div className="frontendbasics10">
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg1"
+                style={{ backgroundImage: `URL(${react})` }}
+              ></div>
+              <p>ReactJS</p>
+            </div>
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg2"
+                style={{ backgroundImage: `URL(${next})` }}
+              ></div>
+              <p>Next.JS</p>
+            </div>
+          </div>
+          <div className="frontendbasics10">
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg1"
+                style={{ backgroundImage: `URL(${vue})` }}
+              ></div>
+              <p>Vue.js</p>
+            </div>
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg2"
+                style={{ backgroundImage: `URL(${tailwind})` }}
+              ></div>
+              <p>Tailwind</p>
+            </div>
+          </div>
+          <div className="frontendbasics101 blocks">
+            <div
+              className="eimgmob eimg4"
+              style={{ backgroundImage: `URL(${boot})` }}
+            ></div>
+            <p>BootStrap</p>
+          </div>
+        </div>
+        {/* Backend Databases */}
+        <div className="frontendbasics">
+          <h2 className="blocksu">Backend Databases</h2>
+          <div className="frontendbasics10">
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg1"
+                style={{ backgroundImage: `URL(${mysq})` }}
+              ></div>
+              <p>MySQL</p>
+            </div>
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg2"
+                style={{ backgroundImage: `URL(${post})` }}
+              ></div>
+              <p>PostgreSQL</p>
+            </div>
+          </div>
+          <div className="frontendbasics101 blocks">
+            <div
+              className="eimgmob eimg4"
+              style={{ backgroundImage: `URL(${mongo})` }}
+            ></div>
+            <p>MongoDB</p>
+          </div>
+        </div>
+        {/* Backend Frameworks */}
+        <div className="frontendbasics">
+          <h2 className="blocksu">Backend Frameworks</h2>
+          <div className="frontendbasics10">
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg1"
+                style={{ backgroundImage: `URL(${node})` }}
+              ></div>
+              <p>Node.js</p>
+            </div>
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg2"
+                style={{ backgroundImage: `URL(${exp})` }}
+              ></div>
+              <p>Express.JS</p>
+            </div>
+          </div>
+          <div className="frontendbasics10">
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg1"
+                style={{ backgroundImage: `URL(${flask})` }}
+              ></div>
+              <p>Flask</p>
+            </div>
+            <div className="frontendbasics101 blocks">
+              <div
+                className="eimgmob eimg2"
+                style={{ backgroundImage: `URL(${lara})` }}
+              ></div>
+              <p>Laravel</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="charactercontainer" ref={charref}>
         <img src={characterimg} className="characterimg" />
       </div>

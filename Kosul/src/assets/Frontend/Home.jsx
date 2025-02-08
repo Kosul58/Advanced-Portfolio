@@ -27,7 +27,7 @@ function Home({ scrollToAbout }) {
               <h1>Kosul Gurung</h1>
               <h3>
                 <BlurText
-                  text="A Full Stack Web Developer residing in Pokhara, Nepal"
+                  text="A Full Stack Web Developer residing."
                   delay={120}
                   animateBy="words"
                   direction="top"

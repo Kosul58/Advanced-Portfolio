@@ -247,6 +247,11 @@
   height: 80px;
 }
 
+.eimgmob {
+  width: 3rem;
+  height: 3rem;
+}
+
 .eimg1 {
   background-image: url("assets\img\HTML5.png");
   background-size: cover;
@@ -346,7 +351,13 @@
     display: none;
   }
   .experiences {
-    height: 200svh;
+    height: 300svh;
+  }
+  .mobileexp {
+    display: flex !important;
+  }
+  .mobileproj {
+    display: flex !important;
   }
 }
 
@@ -360,4 +371,56 @@
   .expinfox1 {
     top: 35%;
   }
+}
+
+.mobileexp {
+  display: none;
+  width: 100%;
+  height: 1700px;
+  flex-direction: column;
+  border: 2px solid white;
+}
+
+.frontendbasics {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.frontendbasics h2 {
+  margin-top: 1rem;
+}
+
+.frontendbasics10 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+
+.frontendbasics101 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mobileproj {
+  display: none;
+  width: 100%;
+  height: 1700px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border: 2px solid white;
+}
+
+.progress-bar {
+  width: 10px;
+  height: 900px;
+  background-color: wheat;
 }

@@ -86,7 +86,7 @@
 @keyframes scaler {
   from {
     opacity: 0;
-    scale: 0.5;
+    scale: 0.2;
   }
   top {
     opacity: 1;
