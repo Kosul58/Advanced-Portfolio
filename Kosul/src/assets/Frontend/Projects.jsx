@@ -23,9 +23,13 @@ gsap.registerPlugin(ScrollTrigger);
 function Projects() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1200);
 
+  const [isSmallScreen2, setIsSmallScreen2] = useState(
+    window.innerWidth <= 1000
+  );
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 1000);
+      setIsSmallScreen2(window.innerWidth <= 950);
     };
 
     window.addEventListener("resize", handleResize);
@@ -222,8 +226,18 @@ function Projects() {
                   style={{ backgroundImage: `URL(${js})` }}
                 ></div>
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">Tower Game</div>
-                <div className="timeline-content">
+                <div
+                  className={`timeline-date ${
+                    !isSmallScreen2 ? "timelineleft" : "timelineright"
+                  }`}
+                >
+                  Tower Game
+                </div>
+                <div
+                  className={`timeline-content ${
+                    !isSmallScreen2 ? "timelineleft" : "timelineright"
+                  }`}
+                >
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -233,8 +247,8 @@ function Projects() {
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">Dice Game</div>
-                <div className="timeline-content">
+                <div className="timeline-date timelineright">Dice Game</div>
+                <div className="timeline-content timelineright">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -264,8 +278,18 @@ function Projects() {
                   style={{ backgroundImage: `URL(${react})` }}
                 ></div>
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">Chess Game</div>
-                <div className="timeline-content">
+                <div
+                  className={`timeline-date ${
+                    !isSmallScreen2 ? "timelineleft" : "timelineright"
+                  }`}
+                >
+                  Chess Game
+                </div>
+                <div
+                  className={`timeline-content ${
+                    !isSmallScreen2 ? "timelineleft" : "timelineright"
+                  }`}
+                >
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -275,8 +299,10 @@ function Projects() {
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">Portfolio Website</div>
-                <div className="timeline-content">
+                <div className="timeline-date timelineright">
+                  Portfolio Website
+                </div>
+                <div className="timeline-content timelineright">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -286,8 +312,18 @@ function Projects() {
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">Nutritrack & Rec </div>
-                <div className="timeline-content">
+                <div
+                  className={`timeline-date ${
+                    !isSmallScreen2 ? "timelineleft" : "timelineright"
+                  }`}
+                >
+                  Nutritrack & Rec{" "}
+                </div>
+                <div
+                  className={`timeline-content ${
+                    !isSmallScreen2 ? "timelineleft" : "timelineright"
+                  }`}
+                >
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -318,8 +354,10 @@ function Projects() {
                   style={{ backgroundImage: `URL(${next})` }}
                 ></div>
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">Fitness Web App</div>
-                <div className="timeline-content">
+                <div className="timeline-date timelineright">
+                  Fitness Web App
+                </div>
+                <div className="timeline-content timelineright">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -329,8 +367,18 @@ function Projects() {
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">College Website</div>
-                <div className="timeline-content">
+                <div
+                  className={`timeline-date ${
+                    !isSmallScreen2 ? "timelineleft" : "timelineright"
+                  }`}
+                >
+                  College Website
+                </div>
+                <div
+                  className={`timeline-content ${
+                    !isSmallScreen2 ? "timelineleft" : "timelineright"
+                  }`}
+                >
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -361,8 +409,10 @@ function Projects() {
                   style={{ backgroundImage: `URL(${vue})` }}
                 ></div>
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">Ecommerce Website</div>
-                <div className="timeline-content">
+                <div className="timeline-date timelineright">
+                  Ecommerce Website
+                </div>
+                <div className="timeline-content timelineright">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -372,8 +422,18 @@ function Projects() {
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">Task Manager</div>
-                <div className="timeline-content">
+                <div
+                  className={`timeline-date ${
+                    !isSmallScreen2 ? "timelineleft" : "timelineright"
+                  }`}
+                >
+                  Task Manager
+                </div>
+                <div
+                  className={`timeline-content ${
+                    !isSmallScreen2 ? "timelineleft" : "timelineright"
+                  }`}
+                >
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
