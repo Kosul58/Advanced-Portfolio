@@ -239,9 +239,7 @@ function Projects() {
                   }`}
                 >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Created using vanilla javascript with some html and css.
                   </p>
                 </div>
               </div>
@@ -250,9 +248,7 @@ function Projects() {
                 <div className="timeline-date timelineright">Dice Game</div>
                 <div className="timeline-content timelineright">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Created using vanilla javascript with some html and css.
                   </p>
                 </div>
               </div>
@@ -291,9 +287,8 @@ function Projects() {
                   }`}
                 >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Created in React with mostly javascript and some html and
+                    css.
                   </p>
                 </div>
               </div>
@@ -304,9 +299,8 @@ function Projects() {
                 </div>
                 <div className="timeline-content timelineright">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    A portfolio website of mine created in react that you are
+                    currently viewing.
                   </p>
                 </div>
               </div>
@@ -325,9 +319,8 @@ function Projects() {
                   }`}
                 >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    College project created using React for web application and
+                    Pytorch for recomendation engine.
                   </p>
                 </div>
               </div>
@@ -359,9 +352,8 @@ function Projects() {
                 </div>
                 <div className="timeline-content timelineright">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    A web app that connects with you fitness devices to track
+                    and manage your health. (Incomeplete)
                   </p>
                 </div>
               </div>
@@ -380,9 +372,8 @@ function Projects() {
                   }`}
                 >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Website for a college with all management tools.
+                    (Incomeplete)
                   </p>
                 </div>
               </div>
@@ -414,9 +405,8 @@ function Projects() {
                 </div>
                 <div className="timeline-content timelineright">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Ecommerce for clothes and various other cosmetic products.
+                    (Incomeplete)
                   </p>
                 </div>
               </div>
@@ -435,9 +425,7 @@ function Projects() {
                   }`}
                 >
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Website to publish and track your daily tasks. (Incomeplete)
                   </p>
                 </div>
               </div>
