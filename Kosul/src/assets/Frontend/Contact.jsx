@@ -24,20 +24,25 @@ function Contact() {
     console.log(email);
 
     try {
-      const response = await fetch("http://localhost:3000/emailadd", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: email,
-          name: nameref.current.value,
-          number: numberref.current.value,
-          message: messageref.current.value,
-        }),
-      });
+      const response = await fetch(
+        "https://advanced-portfolio-1cjc.onrender.com/emailadd",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: email,
+            name: nameref.current.value,
+            number: numberref.current.value,
+            message: messageref.current.value,
+          }),
+        }
+      );
       const data = await response.json();
-      console.log(data);
+      if (data) {
+        alert("Thank You for your information and message.");
+      }
     } catch (error) {
       console.log("error", error);
     }
