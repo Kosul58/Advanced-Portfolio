@@ -55,10 +55,11 @@
 .menuopen {
   display: none;
   position: fixed;
-  top: 40px;
-  right: 40px;
+  top: 10px;
+  right: 10px;
   z-index: 2;
   cursor: pointer;
+  color: white;
 }
 
 .menuopen:hover {
@@ -68,11 +69,11 @@
 .hamburger {
   display: flex;
   position: fixed;
-  width: 350px;
+  width: 300px;
   min-width: 300px;
   height: 550px;
-  top: 40px;
-  right: 40px;
+  top: 10px;
+  right: 10px;
   background-color: rgba(196, 180, 180, 0.2);
   align-items: center;
   justify-content: center;

@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(37, 38, 39, 0.7);
+  background-color: #023e8a;
 }
 
 .expinfo {
@@ -231,13 +231,13 @@
   margin-top: 7rem;
   font-size: 20px;
   font-weight: 600;
-  color: rgb(33, 1, 1);
+  color: rgb(240, 235, 235);
   /* border: 2px solid rgb(0, 0, 0); */
 }
 .experiences h1 {
   font-size: 60px;
   font-weight: 600;
-  color: rgb(34, 1, 1);
+  color: rgb(255, 255, 255);
   margin-top: -0.5rem;
   /* border: 2px solid rgb(0, 0, 0); */
 }

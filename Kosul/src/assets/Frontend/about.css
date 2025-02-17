@@ -46,8 +46,8 @@
 
   .experience,
   .education {
-    min-width: 300px !important;
-    max-height: 200px !important;
+    min-width: 250px !important;
+    max-height: 150px !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +78,10 @@
 
 @media (max-width: 1400px) {
   .about {
-    height: 110vh;
+    height: 130vh;
+  }
+  .aboutinfox {
+    margin-top: 2rem !important;
   }
 }
 

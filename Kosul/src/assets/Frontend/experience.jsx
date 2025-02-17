@@ -51,7 +51,7 @@ function Experience() {
           scrub: 1,
           toggleActions: "play reverse play reverse",
         },
-        scale: 1.5,
+        scale: 1.2,
         translateX: "200px",
         ease: "ease",
         opacity: 1,
@@ -153,7 +153,7 @@ function Experience() {
           toggleActions: "play none play reverse",
         },
         ease: "ease",
-        scale: 1.5,
+        scale: 1.2,
         translateX: "70%",
         opacity: 1,
       });

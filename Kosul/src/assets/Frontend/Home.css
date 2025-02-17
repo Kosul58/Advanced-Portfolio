@@ -6,14 +6,11 @@
   justify-content: center;
   scrollbar-width: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  /* background-image: url("C:\Users\kosul\Desktop\Advanced Kosul Portfolio\Kosul\src\assets\img\77.jpg"); */
-  /* background-image: url("/assets/img/image.jpg"); */
   background-size: cover;
   background-position: center;
 }
 
 .landingpage {
-  margin-top: 10rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -254,5 +251,37 @@
 @media (min-width: 1200px) {
   .buttoncontrol {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .myinformation h1 {
+    font-size: 30px;
+  }
+  .myinformation h3 {
+    font-size: 20px;
+  }
+  .about h2,
+  .experiences h2,
+  .projects h2,
+  .contact h2 {
+    font-size: 25px !important;
+    margin-top: 2rem !important;
+  }
+  .about h1,
+  .experiences h1,
+  .projects h1,
+  .contact h1 {
+    font-size: 40px !important;
+  }
+  .aboutimg {
+    margin-top: 4rem;
+  }
+  .emailinfo {
+    width: 200% !important;
+    font-size: 10px !important;
+  }
+  .timeline-section {
+    margin-top: 2rem !important;
   }
 }
