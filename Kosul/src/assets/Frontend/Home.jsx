@@ -1,7 +1,5 @@
 import React from "react";
 import "./Home.css";
-import kosul22 from "../img/kosul22.jpg";
-import homeimg from "../img/image.jpg";
 import BlurText from "./blurtext";
 
 function Home({ scrollToAbout }) {
@@ -19,7 +17,7 @@ function Home({ scrollToAbout }) {
 
   return (
     <>
-      <div className="home" style={{ backgroundImage: `URL(${homeimg})` }}>
+      <div className="home">
         <div className="landingpage">
           <div className="selfinfo ">
             <div className="myinformation">
